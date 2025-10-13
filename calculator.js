@@ -40,3 +40,15 @@ display.appendChild(p);
 *        do not have to be made for each number button.
 *  STORE display content somewhere...
 */
+
+/*  GOAL: MAKE operators appear on screen
+*   MAKE a reference to operators
+*   USING an event listener
+*       GIVE operator the value of the button's outerText
+*       IF outerText equals ÷ use /
+*       IF outerText equals × use *
+*       ELSE if outerText equals = call operate function
+*       ELSE use outerText
+*       ADD space before and after operator so it looks better 
+*       EX: p.textContent += ` ${operator} `
+*/
