@@ -15,11 +15,11 @@ function operate(a, b, operator) {
 };
 
 const display = document.querySelector("#display");
-const buttons = document.querySelectorAll(".number")
+const numbers = document.querySelectorAll(".number")
 
 const p = document.createElement("p");
 
-buttons.forEach(button => {
+numbers.forEach(button => {
     button.addEventListener("click", () => {
         let input = Number(button.outerText);
         p.textContent += input;
