@@ -17,12 +17,13 @@ function operate(a, b, operator) {
 const display = document.querySelector("#display");
 const buttons = document.querySelectorAll(".number")
 
+const p = document.createElement("p");
+
 buttons.forEach(button => {
     button.addEventListener("click", () => {
         console.log(Number(button.outerText));
     });
 });
-
 
 // GOAL: Take the input from the user pressing the buttons and have it 
 // appear in display
