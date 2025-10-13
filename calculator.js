@@ -21,7 +21,7 @@ const p = document.createElement("p");
 
 buttons.forEach(button => {
     button.addEventListener("click", () => {
-        console.log(Number(button.outerText));
+        let input = Number(button.outerText);
     });
 });
 
