@@ -41,6 +41,8 @@ display.appendChild(p);
 *  STORE display content somewhere...
 */
 
+const operators = document.querySelectorAll(".operator")
+
 /*  GOAL: MAKE operators appear on screen
 *   MAKE a reference to operators
 *   USING an event listener
