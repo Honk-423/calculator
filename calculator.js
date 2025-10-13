@@ -15,6 +15,7 @@ function operate(a, b, operator) {
 };
 
 const display = document.querySelector("#display");
+const buttons = document.querySelectorAll(".number")
 
 
 // GOAL: Take the input from the user pressing the buttons and have it 
