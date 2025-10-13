@@ -19,7 +19,7 @@ const buttons = document.querySelectorAll(".number")
 
 buttons.forEach(button => {
     button.addEventListener("click", () => {
-        
+        console.log(Number(button.outerText));
     });
 });
 
