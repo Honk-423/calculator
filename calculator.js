@@ -14,6 +14,9 @@ function operate(a, b, operator) {
 
 };
 
+const display = document.querySelector("#display");
+
+
 // GOAL: Take the input from the user pressing the buttons and have it 
 // appear in display
 /*
