@@ -1,3 +1,17 @@
 * {
     box-sizing: border-box;
 }
+
+#buttons {
+    display: flex;
+}
+
+#center {
+    display: flex;
+    flex-flow: column;
+}
+
+#right {
+    display: flex;
+    flex-flow: column;
+}
