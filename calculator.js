@@ -22,8 +22,11 @@ const p = document.createElement("p");
 buttons.forEach(button => {
     button.addEventListener("click", () => {
         let input = Number(button.outerText);
+        p.textContent += input;
     });
 });
+
+display.appendChild(p);
 
 // GOAL: Take the input from the user pressing the buttons and have it 
 // appear in display
