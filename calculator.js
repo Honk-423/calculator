@@ -54,6 +54,11 @@ operators.forEach(button => {
             p.textContent += " ÷ "
         };
 
+        if (button.outerText === "×") {
+            operator = "*";
+            p.textContent += " × "
+        };
+
     });
 });
 
