@@ -18,7 +18,7 @@ function operate(a, b, oper) {
     oper = operator;
 
     if (oper === "+") {
-        console.log(add(a, b));
+        para.textContent += ` = ${add(a, b)}`
     };
 };
 
