@@ -88,3 +88,8 @@ operators.forEach(button => {
 *       ADD space before and after operator so it looks better 
 *       EX: p.textContent += ` ${operator} `
 */
+
+
+function splitNumsAndOperator(usersInput) {
+
+};
