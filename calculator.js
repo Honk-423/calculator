@@ -103,7 +103,7 @@ function splitNumsAndOperator(usersInput) {
 
     numOne = usersInput[0];
     operator = usersInput[1];
-    numTwo = usersInput [2];
+    numTwo = usersInput[2];
     
     console.log(usersInput);
 };
