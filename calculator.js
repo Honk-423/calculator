@@ -13,7 +13,7 @@ const multiply = (a, b) => a * b;
 const divide = (a, b) => a / b;
 
 function operate(a, b, oper) {
-    splitNumsAndOperator(p.textContent);
+    splitNumsAndOperator(para.textContent);
 
     a = numOne;
     b = numTwo
@@ -27,16 +27,16 @@ function operate(a, b, oper) {
 const display = document.querySelector("#display");
 const numbers = document.querySelectorAll(".number")
 
-const p = document.createElement("p");
+const para = document.createElement("p");
 
 numbers.forEach(button => {
     button.addEventListener("click", () => {
         input = Number(button.outerText);
-        p.textContent += input;
+        para.textContent += input;
     });
 });
 
-display.appendChild(p);
+display.appendChild(para);
 
 // GOAL: Take the input from the user pressing the buttons and have it 
 // appear in display
@@ -56,27 +56,27 @@ const operators = document.querySelectorAll(".operator")
 operators.forEach(button => {
     button.addEventListener("click", () => {
         if (button.outerText === "CLEAR") {
-            p.replaceChildren();
+            para.replaceChildren();
         };
 
         if (button.outerText === "÷") {
             operator = "/";
-            p.textContent += " ÷ "
+            para.textContent += " ÷ "
         };
 
         if (button.outerText === "×") {
             operator = "*";
-            p.textContent += " × "
+            para.textContent += " × "
         };
 
         if (button.outerText === "-") {
             operator = "-";
-            p.textContent += " - "
+            para.textContent += " - "
         };
 
         if (button.outerText === "+") {
             operator = "+";
-            p.textContent += " + "
+            para.textContent += " + "
         };
 
         if (button.outerText === "=") {
@@ -101,7 +101,7 @@ operators.forEach(button => {
 
 
 function splitNumsAndOperator(usersInput) {
-    usersInput = p.textContent.split(" ");
+    usersInput = para.textContent.split(" ");
 
     numOne = usersInput[0];
     operator = usersInput[1];
