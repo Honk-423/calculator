@@ -96,6 +96,10 @@ operators.forEach(button => {
 function splitNums(usersInput) {
     usersInput = p.textContent.split(" ");
 
+    numOne = usersInput[0];
+    operator = usersInput[1];
+    numTwo = usersInput [2];
+    
     console.log(usersInput);
 };
 
