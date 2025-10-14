@@ -18,6 +18,10 @@ function operate(a, b, oper) {
     a = numOne;
     b = numTwo
     oper = operator;
+
+    if (oper === "+") {
+        console.log(add(a, b));
+    };
 };
 
 const display = document.querySelector("#display");
