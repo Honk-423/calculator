@@ -94,7 +94,9 @@ operators.forEach(button => {
 
 
 function splitNums(usersInput) {
-    alert(usersInput);
+    usersInput = p.textContent.split(" ");
+
+    console.log(usersInput);
 };
 
 /* 
