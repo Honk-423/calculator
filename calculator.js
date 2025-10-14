@@ -93,7 +93,7 @@ operators.forEach(button => {
 */
 
 
-function splitNums(usersInput) {
+function splitNumsAndOperator(usersInput) {
     usersInput = p.textContent.split(" ");
 
     numOne = usersInput[0];
