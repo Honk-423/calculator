@@ -2,8 +2,6 @@ let numOne;
 let numTwo;
 let operator;
 
-let input;
-
 const add = (a, b) => a + b;
 
 const subtract = (a, b) => a - b;
@@ -31,7 +29,7 @@ const para = document.createElement("p");
 
 numbers.forEach(button => {
     button.addEventListener("click", () => {
-        input = Number(button.outerText);
+        let input = Number(button.outerText);
         para.textContent += input;
     });
 });
