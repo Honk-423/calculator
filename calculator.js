@@ -95,3 +95,14 @@ operators.forEach(button => {
 function splitNums(usersInput) {
 
 };
+
+/* 
+*   SPLIT input into substrings/an array using operator as a delimiter
+*   MAKE numOne = substring 1
+*   MAKE operater = substring 2
+*   MAKE numTwo = substring 3
+*   MOVE splitNums into operate and call it
+*   MAKE a = numOne in operate
+*   MAKE b = numTwo in operate
+*   MAKE operator = operator in operate // Probably need to change the name of one of them for this
+*/
