@@ -51,7 +51,7 @@ operators.forEach(button => {
 
         if (button.outerText === "÷") {
             operator = "/";
-            
+            p.textContent += " ÷ "
         };
 
     });
