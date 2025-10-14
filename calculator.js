@@ -43,6 +43,13 @@ display.appendChild(p);
 
 const operators = document.querySelectorAll(".operator")
 
+operators.forEach(button => {
+    button.addEventListener("click", () => {
+        
+    });
+});
+
+
 /*  GOAL: MAKE operators appear on screen
 *   MAKE a reference to operators
 *   USING an event listener
