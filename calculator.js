@@ -45,7 +45,9 @@ const operators = document.querySelectorAll(".operator")
 
 operators.forEach(button => {
     button.addEventListener("click", () => {
-        
+        if (button.outerText === "CLEAR") {
+            p.replaceChildren();
+        };
     });
 });
 
