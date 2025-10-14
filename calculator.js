@@ -17,9 +17,12 @@ function operate(a, b, oper) {
     b = numTwo
     oper = operator;
 
-    if (oper === "+") {
+    switch (oper) {
+        case "+": 
         para.textContent += ` = ${add(a, b)}`
-    };
+        break;
+    }
+
 };
 
 const display = document.querySelector("#display");
