@@ -90,6 +90,6 @@ operators.forEach(button => {
 */
 
 
-function splitNumsAndOperator(usersInput) {
+function splitNums(usersInput) {
 
 };
