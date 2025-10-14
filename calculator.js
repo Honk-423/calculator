@@ -15,6 +15,9 @@ const divide = (a, b) => a / b;
 function operate(a, b, oper) {
     splitNumsAndOperator(p.textContent);
 
+    a = numOne;
+    b = numTwo
+    oper = operator;
 };
 
 const display = document.querySelector("#display");
