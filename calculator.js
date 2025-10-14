@@ -12,7 +12,7 @@ const multiply = (a, b) => a * b;
 
 const divide = (a, b) => a / b;
 
-function operate(a, b, operator) {
+function operate(a, b, oper) {
     splitNumsAndOperator(p.textContent);
 
 };
