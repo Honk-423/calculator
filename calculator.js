@@ -48,6 +48,12 @@ operators.forEach(button => {
         if (button.outerText === "CLEAR") {
             p.replaceChildren();
         };
+
+        if (button.outerText === "÷") {
+            operator = "/";
+            
+        };
+
     });
 });
 
