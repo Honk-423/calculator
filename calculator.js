@@ -19,8 +19,8 @@ function operate(a, b, oper) {
 
     switch (oper) {
         case "+": 
-        para.textContent += ` = ${add(a, b)}`
-        break;
+            para.textContent += ` = ${add(a, b)}`
+            break;
     }
 
 };
