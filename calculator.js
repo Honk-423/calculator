@@ -101,9 +101,9 @@ operators.forEach(button => {
 function splitNumsAndOperator(usersInput) {
     usersInput = para.textContent.split(" ");
 
-    numOne = usersInput[0];
+    numOne = Number(usersInput[0]);
     operator = usersInput[1];
-    numTwo = usersInput[2];
+    numTwo = Number(usersInput[2]);
     
     console.log(usersInput);
 };
