@@ -16,7 +16,7 @@ const divide = (a, b) => {
     } else {
         return quotient;
     };
-    
+
 };
 
 function operate(a, b, oper) {
@@ -39,7 +39,7 @@ function operate(a, b, oper) {
         case "÷":
             para.textContent += ` = ${divide(a, b)}`
             break;
-    }
+    };
 
 };
 
