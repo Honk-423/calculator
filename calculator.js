@@ -98,7 +98,12 @@ operators.forEach(button => {
 
         if (button.outerText === "=") {
             splitNumsAndOperator(para.textContent);
-            operate();
+
+            if (numOne !== undefined 
+                && operator !== undefined 
+                && numTwo !== undefined) {
+                    operate();
+                };
         };
 
     });
