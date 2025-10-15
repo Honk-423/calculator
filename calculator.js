@@ -126,7 +126,10 @@ function splitNumsAndOperator(usersInput) {
     };
     
     operator = usersInput[1];
-    numTwo = Number(usersInput[2]);
+
+    if (usersInput[2]) {
+        numTwo = Number(usersInput[2]);
+    };
     
     console.log(usersInput);
 };
