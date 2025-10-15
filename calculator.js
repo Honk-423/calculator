@@ -20,8 +20,6 @@ const divide = (a, b) => {
 };
 
 function operate(a, b, oper) {
-    splitNumsAndOperator(para.textContent);
-
     a = numOne;
     b = numTwo
     oper = operator;
@@ -99,6 +97,7 @@ operators.forEach(button => {
         };
 
         if (button.outerText === "=") {
+            splitNumsAndOperator(para.textContent);
             operate();
         };
 
