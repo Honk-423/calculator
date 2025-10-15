@@ -28,7 +28,7 @@ function operate(a, b, oper) {
             para.textContent += ` = ${multiply(a, b)}`
             break;
         case "÷":
-            divide(a, b);
+            para.textContent += ` = ${divide(a, b)}`
             break;
     }
 
