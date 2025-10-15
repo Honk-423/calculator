@@ -121,7 +121,10 @@ operators.forEach(button => {
 function splitNumsAndOperator(usersInput) {
     usersInput = para.textContent.split(" ");
 
-    numOne = Number(usersInput[0]);
+    if (usersInput[0] !== "") {
+        numOne = Number(usersInput[0]);
+    };
+    
     operator = usersInput[1];
     numTwo = Number(usersInput[2]);
     
