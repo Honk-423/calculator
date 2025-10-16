@@ -111,7 +111,8 @@ operators.forEach(button => {
         if (button.outerText === "=") {
             if (numOne !== undefined 
                 && operator !== undefined 
-                && numTwo !== undefined) {
+                && numTwo !== undefined
+                && numTwo !== NaN) {
                     operate();
                 };
         };
