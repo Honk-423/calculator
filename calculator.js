@@ -80,22 +80,22 @@ operators.forEach(button => {
             para.replaceChildren();
         };
 
-        if (button.outerText === "÷") {
+        if (button.outerText === "÷" && operator === undefined) {
             operator = "/";
             para.textContent += " ÷ "
         };
 
-        if (button.outerText === "×") {
+        if (button.outerText === "×" && operator === undefined) {
             operator = "*";
             para.textContent += " × "
         };
 
-        if (button.outerText === "-") {
+        if (button.outerText === "-" && operator === undefined) {
             operator = "-";
             para.textContent += " - "
         };
 
-        if (button.outerText === "+") {
+        if (button.outerText === "+" && operator === undefined) {
             operator = "+";
             para.textContent += " + "
         };
