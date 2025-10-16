@@ -50,8 +50,10 @@ const para = document.createElement("p");
 
 numbers.forEach(button => {
     button.addEventListener("click", () => {
-        let input = Number(button.outerText);
-        para.textContent += input;
+        if (operateSuccessfullyCalled === false) {
+            let input = Number(button.outerText);
+            para.textContent += input;
+        };
     });
 });
 
