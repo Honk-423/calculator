@@ -72,6 +72,10 @@ const operators = document.querySelectorAll(".operator")
 
 operators.forEach(button => {
     button.addEventListener("click", () => {
+        if (button.outerText !== "CLEAR") {
+            splitNumsAndOperator(para.textContent);
+        }
+
         if (button.outerText === "CLEAR") {
             para.replaceChildren();
         };
@@ -97,8 +101,6 @@ operators.forEach(button => {
         };
 
         if (button.outerText === "=") {
-            splitNumsAndOperator(para.textContent);
-
             if (numOne !== undefined 
                 && operator !== undefined 
                 && numTwo !== undefined) {
