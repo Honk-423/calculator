@@ -117,9 +117,7 @@ operators.forEach(button => {
         if (button.outerText === "=") {
             if (numOne === 0 && operator === "÷" && numTwo === 0) {
                 alert("Nice try. Please change the value of a number or choose a different operator.")
-            };
-            
-            if (numOne !== undefined 
+            } else if (numOne !== undefined 
                 && operator !== undefined 
                 && numTwo !== undefined
                 && numTwo !== NaN
@@ -128,6 +126,7 @@ operators.forEach(button => {
                     
                     operate();
                 };
+            
         };
 
     });
