@@ -116,6 +116,8 @@ operators.forEach(button => {
                 && numTwo !== undefined
                 && numTwo !== NaN
                 && userInputsLength === 3) {
+                    operateSuccessfullyCalled = true;
+                    
                     operate();
                 };
         };
