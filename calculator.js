@@ -112,7 +112,8 @@ operators.forEach(button => {
             if (numOne !== undefined 
                 && operator !== undefined 
                 && numTwo !== undefined
-                && numTwo !== NaN) {
+                && numTwo !== NaN
+                && userInputsLength === 3) {
                     operate();
                 };
         };
@@ -133,6 +134,7 @@ operators.forEach(button => {
 *       EX: p.textContent += ` ${operator} `
 */
 
+let userInputsLength;
 
 function splitNumsAndOperator(usersInput) {
     usersInput = para.textContent.split(" ");
@@ -147,6 +149,7 @@ function splitNumsAndOperator(usersInput) {
         numTwo = Number(usersInput[2]);
     };
     
+    userInputsLength = usersInput.length
     console.log(usersInput);
 };
 
