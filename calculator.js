@@ -81,6 +81,8 @@ operators.forEach(button => {
         }
 
         if (button.outerText === "CLEAR") {
+            operateSuccessfullyCalled = false;
+            
             para.replaceChildren();
         };
 
