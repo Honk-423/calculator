@@ -16,4 +16,5 @@ body {
 
 #operators {
     display: flex;
+    flex-flow: column;
 }
