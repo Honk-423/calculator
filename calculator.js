@@ -35,3 +35,7 @@ operators.forEach((op) => {
         operator = input;
     });
 });
+
+function getNumOneAndTwo() {
+
+};
