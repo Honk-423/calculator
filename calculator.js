@@ -15,3 +15,5 @@ function operate(a, b, op) {
 };
 
 const calcPara = document.querySelector("#calcPara");
+
+const numbers = document.querySelectorAll(".number");
