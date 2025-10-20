@@ -31,5 +31,7 @@ operators.forEach((op) => {
     op.addEventListener("click", () => {
         let input = op.outerText;
         calcPara.textContent += input;
+
+        operator = input;
     });
 });
