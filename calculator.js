@@ -37,7 +37,7 @@ operators.forEach((op) => {
 });
 
 function getNumOneAndTwo() {
-    calcPara.textContent.split(" ");
+    let paraArr = calcPara.textContent.split(" ");
 
     numOne = calcPara.textContent[0];
 
