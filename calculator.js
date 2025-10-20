@@ -26,3 +26,7 @@ numbers.forEach((number) => {
 });
 
 const operators = document.querySelectorAll(".operator");
+
+operators.forEach((operator) => {
+
+});
