@@ -13,3 +13,5 @@ const divide = (a, b) => a / b;
 function operate(a, b, op) {
 
 };
+
+const calcPara = document.querySelector("#calcPara");
