@@ -19,5 +19,7 @@ const calcPara = document.querySelector("#calcPara");
 const numbers = document.querySelectorAll(".number");
 
 numbers.forEach((number) => {
+    number.addEventListener("click", () => {
 
+    });
 });
