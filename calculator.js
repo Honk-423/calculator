@@ -24,3 +24,5 @@ numbers.forEach((number) => {
         calcPara.textContent += input;
     });
 });
+
+const operators = document.querySelectorAll(".operator");
