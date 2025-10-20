@@ -9,3 +9,11 @@ html {
 body {
     height: 100%;
 }
+
+#buttons {
+    display: flex;
+}
+
+#operators {
+    display: flex;
+}
