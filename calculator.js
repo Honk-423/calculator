@@ -37,5 +37,5 @@ operators.forEach((op) => {
 });
 
 function getNumOneAndTwo() {
-
+    calcPara.textContent.split(" ");
 };
