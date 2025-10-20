@@ -38,4 +38,8 @@ operators.forEach((op) => {
 
 function getNumOneAndTwo() {
     calcPara.textContent.split(" ");
+
+    numOne = calcPara.textContent[0];
+
+    numTwo = calcPara.textContent[2]
 };
