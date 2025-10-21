@@ -96,12 +96,12 @@ operators.forEach((op) => {
 const equalBtn = document.querySelector("#equal");
 
 equalBtn.addEventListener("click", () => {
-    getNumOneAndTwo();
+    getNumbersFromInput();
 
     operate(numOne, numTwo, operator);
 });
 
-function getNumOneAndTwo() {
+function getNumbersFromInput() {
     let paraArr = calcPara.textContent.split(" ");
 
     numOne = Number(paraArr[0]);
