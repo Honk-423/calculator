@@ -112,11 +112,12 @@ equalBtn.addEventListener("click", () => {
 function getNumbersFromInput() {
     let paraArr = calcPara.textContent.split(" ");
 
+    numOne = Number(paraArr[0]);
+
+    numTwo = Number(paraArr[2]);
+
     for (let i = 0; i <= amountOperateWasCalled; i++) {
         
     };
 
-    numOne = Number(paraArr[0]);
-
-    numTwo = Number(paraArr[2]);
 };
