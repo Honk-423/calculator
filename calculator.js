@@ -115,8 +115,8 @@ function getNumbersFromInput() {
     for (let i = 0; i <= amountOperateWasCalled; i++) {
         
     };
-    
+
     numOne = Number(paraArr[0]);
 
-    numTwo = Number(paraArr[2])
+    numTwo = Number(paraArr[2]);
 };
