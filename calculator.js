@@ -60,7 +60,7 @@ operators.forEach((op) => {
 const equalBtn = document.querySelector("#equal");
 
 equalBtn.addEventListener("click", () => {
-    operate();
+    operate(numOne, numTwo, operator);
 });
 
 function getNumOneAndTwo() {
