@@ -25,6 +25,8 @@ numbers.forEach((number) => {
     });
 });
 
+const clearBtn = document.querySelector("#clear");
+
 const operators = document.querySelectorAll(".operator");
 
 operators.forEach((op) => {
