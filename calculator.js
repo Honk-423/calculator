@@ -13,16 +13,16 @@ const divide = (a, b) => a / b;
 function operate(a, b, op) {
     switch (op) {
         case "÷": 
-            divide(a, b);
+            calcPara.textContent += ` = ${divide(a, b)}`;
             break;
         case "×": 
-            multiply(a, b);
+            calcPara.textContent += ` = ${multiply(a, b)}`;
             break;
         case "-": 
-            subtract(a, b);
+            calcPara.textContent += ` = ${subtract(a, b)}`;
             break;
         case "+": 
-            add(a, b);
+            calcPara.textContent += ` = ${add(a, b)}`;
             break;
     };
 };
