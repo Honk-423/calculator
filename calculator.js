@@ -56,10 +56,12 @@ const operators = document.querySelectorAll(".operator");
 
 operators.forEach((op) => {
     op.addEventListener("click", () => {
-        let input = op.outerText;
-        calcPara.textContent += ` ${input} `;
-
-        operator = input;
+        if (numOne && operator == undefined) {
+            let input = op.outerText;
+            calcPara.textContent += ` ${input} `;
+    
+            operator = input;
+        };
     });
 });
 
