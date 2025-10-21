@@ -27,6 +27,10 @@ numbers.forEach((number) => {
 
 const clearBtn = document.querySelector("#clear");
 
+clearBtn.addEventListener("click", () => {
+    calcPara.replaceChildren();
+});
+
 const operators = document.querySelectorAll(".operator");
 
 operators.forEach((op) => {
