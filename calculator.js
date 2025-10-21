@@ -56,6 +56,8 @@ const operators = document.querySelectorAll(".operator");
 
 operators.forEach((op) => {
     op.addEventListener("click", () => {
+        getNumbersFromInput();
+
         if (numOne && operator == undefined) {
             let input = op.outerText;
             calcPara.textContent += ` ${input} `;
