@@ -11,6 +11,8 @@ const multiply = (a, b) => a * b;
 const divide = (a, b) => a / b;
 
 function operate(a, b, op) {
+    getNumOneAndTwo();
+
     switch (op) {
         
     };
