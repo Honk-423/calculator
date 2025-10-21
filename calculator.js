@@ -18,6 +18,8 @@ const divide = (a, b) => {
     };
 };
 
+let amountOperateWasCalled = 0;
+
 function operate(a, b, op) {
     switch (op) {
         case "÷": 
