@@ -8,7 +8,9 @@ const subtract = (a, b) => a - b;
 
 const multiply = (a, b) => a * b;
 
-const divide = (a, b) => a / b;
+const divide = (a, b) => {
+    let quotient = a / b;
+};
 
 function operate(a, b, op) {
     switch (op) {
