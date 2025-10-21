@@ -35,6 +35,8 @@ function operate(a, b, op) {
             calcPara.textContent += ` = ${add(a, b)}`;
             break;
     };
+
+    amountOperateWasCalled++;
 };
 
 const calcPara = document.querySelector("#calcPara");
