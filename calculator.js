@@ -35,7 +35,7 @@ const numbers = document.querySelectorAll(".number");
 
 numbers.forEach((number) => {
     number.addEventListener("click", () => {
-        let input = Number(number.outerText);
+        let input = number.outerText;
         calcPara.textContent += input;
     });
 });
@@ -66,7 +66,7 @@ equalBtn.addEventListener("click", () => {
 function getNumOneAndTwo() {
     let paraArr = calcPara.textContent.split(" ");
 
-    numOne = paraArr[0];
+    numOne = Number(paraArr[0]);
 
-    numTwo = paraArr[2]
+    numTwo = Number(paraArr[2])
 };
