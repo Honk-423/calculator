@@ -66,7 +66,7 @@ operators.forEach((op) => {
 const equalBtn = document.querySelector("#equal");
 
 equalBtn.addEventListener("click", () => {
-    getNumOneAndTwo();
+    getNumbersFromInput();
 
     operate(numOne, numTwo, operator);
 });
