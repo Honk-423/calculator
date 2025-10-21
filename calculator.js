@@ -10,6 +10,10 @@ const multiply = (a, b) => a * b;
 
 const divide = (a, b) => {
     let quotient = a / b;
+    
+    if (quotient % 1 !== 0) {
+        return quotient.toFixed(1);
+    };
 };
 
 function operate(a, b, op) {
