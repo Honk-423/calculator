@@ -13,6 +13,8 @@ const divide = (a, b) => {
     
     if (quotient % 1 !== 0) {
         return quotient.toFixed(1);
+    } else {
+        return quotient;
     };
 };
 
