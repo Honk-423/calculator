@@ -44,6 +44,10 @@ operators.forEach((op) => {
 
 const equalBtn = document.querySelector("#equal");
 
+equalBtn.addEventListener("click", () => {
+    operate();
+});
+
 function getNumOneAndTwo() {
     let paraArr = calcPara.textContent.split(" ");
 
