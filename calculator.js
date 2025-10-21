@@ -51,7 +51,7 @@ equalBtn.addEventListener("click", () => {
 function getNumOneAndTwo() {
     let paraArr = calcPara.textContent.split(" ");
 
-    numOne = paraArr[0];
+    numOne = Number(paraArr[0]);
 
-    numTwo = paraArr[2]
+    numTwo = Number(paraArr[2])
 };
