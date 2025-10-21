@@ -71,7 +71,7 @@ equalBtn.addEventListener("click", () => {
     operate(numOne, numTwo, operator);
 });
 
-function getNumOneAndTwo() {
+function getNumbersFromInput() {
     let paraArr = calcPara.textContent.split(" ");
 
     numOne = Number(paraArr[0]);
