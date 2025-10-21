@@ -38,6 +38,8 @@ operators.forEach((op) => {
     });
 });
 
+const equalBtn = document.querySelector("#equal");
+
 function getNumOneAndTwo() {
     let paraArr = calcPara.textContent.split(" ");
 
