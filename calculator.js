@@ -14,7 +14,18 @@ function operate(a, b, op) {
     getNumOneAndTwo();
 
     switch (op) {
-        
+        case "÷": 
+            divide(a, b);
+            break;
+        case "×": 
+            multiply(a, b);
+            break;
+        case "-": 
+            subtract(a, b);
+            break;
+        case "+": 
+            add(a, b);
+            break;
     };
 };
 
