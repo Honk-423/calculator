@@ -11,8 +11,6 @@ const multiply = (a, b) => a * b;
 const divide = (a, b) => a / b;
 
 function operate(a, b, op) {
-    getNumOneAndTwo();
-
     switch (op) {
         case "÷": 
             divide(a, b);
@@ -60,6 +58,8 @@ operators.forEach((op) => {
 const equalBtn = document.querySelector("#equal");
 
 equalBtn.addEventListener("click", () => {
+    getNumOneAndTwo();
+
     operate(numOne, numTwo, operator);
 });
 
