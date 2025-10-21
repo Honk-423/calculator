@@ -63,6 +63,8 @@ operators.forEach((op) => {
             calcPara.textContent += ` ${input} `;
     
             operator = input;
+        } else if (numTwo) {
+            operate(numOne, numTwo, operator);
         };
     });
 });
