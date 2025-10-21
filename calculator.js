@@ -36,6 +36,8 @@ function operate(a, b, op) {
             break;
     };
 
+    operator = null;
+
     amountOperateWasCalled++;
 };
 
