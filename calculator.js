@@ -118,6 +118,8 @@ function getNumbersFromInput() {
 
     numTwo = Number(paraArr[2]);
 
+    let addFourEveryLoop = 0;
+
     for (let i = 0; i <= amountOperateWasCalled; i++) {
         
     };
