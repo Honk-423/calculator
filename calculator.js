@@ -75,27 +75,6 @@ operators.forEach((op) => {
     });
 });
 
-/*  
-*   IF numOne exists and operator is undefined or null allow appending 
-*   the operator to calcPara
-*   ELSE IF numTwo exists call op
-*/
-// Should prevent user from inputting an operator before giving numOne 
-// a value or adding an operator after numTwo but before the result.
-
-/* 
-*   INITIALIZE amountOperateWasCalled as a global variable with the 
-*   value 0
-*   INCREMENT amountOperateWasCalled every time operate is called
-*   SET operator to null whenever operate is called
-    // Should allow the user to keep inputting operators but only
-    // in the correct spot
-*   INITIALIZE for loop in getNumOneAndTwo with the value zero
-*   ADD 4 to numOne and numTwo's index in paraArr on every loop
-*/
-// Should keep changing the index number of numOne and numTwo
-// so the correct numbers are operated on
-
 /* 
 *   SET numOne, numTwo, operator to null and amountOperateWasCalled to
 *   zero whenever clear is clicked
