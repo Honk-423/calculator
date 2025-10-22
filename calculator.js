@@ -4,14 +4,32 @@ let operator;
 
 const add = (a, b) => {
     let sum = a + b;
+
+    if (sum % 1 !== 0) {
+        return sum.toFixed(1);
+    } else {
+        return sum;
+    };
 };
 
 const subtract = (a, b) => {
     let difference = a - b;
+
+    if (difference % 1 !== 0) {
+        return difference.toFixed(1);
+    } else {
+        return difference;
+    };
 };
 
 const multiply = (a, b) => {
     let product = a * b;
+
+    if (product % 1 !== 0) {
+        return product.toFixed(1);
+    } else {
+        return product;
+    };
 };
 
 const divide = (a, b) => {
