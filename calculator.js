@@ -42,6 +42,8 @@ const divide = (a, b) => {
     };
 };
 
+let hasOperateBeenCalled = false;
+
 function operate(a, b, op) {
     if (a && b && op) {
         switch (op) {
