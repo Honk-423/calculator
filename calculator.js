@@ -124,4 +124,6 @@ function getNumbersFromInput() {
         addFourEveryLoop += 4;
     };
 
+    numOne = Number(paraArr[0 + addFourEveryLoop]);
+    numTwo = Number(paraArr[2 + addFourEveryLoop]);
 };
