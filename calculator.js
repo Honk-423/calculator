@@ -21,24 +21,26 @@ const divide = (a, b) => {
 let amountOperateWasCalled = 0;
 
 function operate(a, b, op) {
-    switch (op) {
-        case "÷": 
-            calcPara.textContent += ` = ${divide(a, b)}`;
-            break;
-        case "×": 
-            calcPara.textContent += ` = ${multiply(a, b)}`;
-            break;
-        case "-": 
-            calcPara.textContent += ` = ${subtract(a, b)}`;
-            break;
-        case "+": 
-            calcPara.textContent += ` = ${add(a, b)}`;
-            break;
+    if (a && b && op) {
+        switch (op) {
+            case "÷": 
+                calcPara.textContent += ` = ${divide(a, b)}`;
+                break;
+            case "×": 
+                calcPara.textContent += ` = ${multiply(a, b)}`;
+                break;
+            case "-": 
+                calcPara.textContent += ` = ${subtract(a, b)}`;
+                break;
+            case "+": 
+                calcPara.textContent += ` = ${add(a, b)}`;
+                break;
+        };
+    
+        operator = null;
+    
+        amountOperateWasCalled++;
     };
-
-    operator = null;
-
-    amountOperateWasCalled++;
 };
 
 const calcPara = document.querySelector("#calcPara");
