@@ -38,6 +38,8 @@ function operate(a, b, op) {
         };
     
         amountOperateWasCalled++;
+
+        operator = null;
     };
 };
 
