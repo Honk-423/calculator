@@ -81,13 +81,6 @@ operators.forEach((op) => {
     });
 });
 
-/* 
-*   SET numOne, numTwo, operator to null and amountOperateWasCalled to
-*   zero whenever clear is clicked
-*/
-// Prevents bugs from occurring due to old information not being 
-// properly wiped out
-
 const equalBtn = document.querySelector("#equal");
 
 equalBtn.addEventListener("click", () => {
