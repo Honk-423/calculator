@@ -49,6 +49,8 @@ numbers.forEach((number) => {
     number.addEventListener("click", () => {
         let input = number.outerText;
         calcPara.textContent += input;
+
+        getNumbersFromInput();
     });
 });
 
@@ -84,9 +86,9 @@ operators.forEach((op) => {
 const equalBtn = document.querySelector("#equal");
 
 equalBtn.addEventListener("click", () => {
-    getNumbersFromInput();
-
     operate(numOne, numTwo, operator);
+    
+    getNumbersFromInput();
 });
 
 function getNumbersFromInput() {
