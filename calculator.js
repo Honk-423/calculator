@@ -56,6 +56,10 @@ const clearBtn = document.querySelector("#clear");
 
 clearBtn.addEventListener("click", () => {
     calcPara.replaceChildren();
+
+    numOne = null;
+    numTwo = null;
+    operator = null;
 });
 
 const operators = document.querySelectorAll(".operator");
