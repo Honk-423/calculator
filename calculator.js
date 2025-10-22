@@ -2,11 +2,17 @@ let numOne;
 let numTwo;
 let operator;
 
-const add = (a, b) => a + b;
+const add = (a, b) => {
+    let sum = a + b;
+};
 
-const subtract = (a, b) => a - b;
+const subtract = (a, b) => {
+    let difference = a - b;
+};
 
-const multiply = (a, b) => a * b;
+const multiply = (a, b) => {
+    let product = a * b;
+};
 
 const divide = (a, b) => {
     let quotient = a / b;
