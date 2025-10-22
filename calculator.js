@@ -60,6 +60,8 @@ clearBtn.addEventListener("click", () => {
     numOne = null;
     numTwo = null;
     operator = null;
+
+    amountOperateWasCalled = 0;
 });
 
 const operators = document.querySelectorAll(".operator");
