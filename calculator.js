@@ -73,10 +73,12 @@ const numbers = document.querySelectorAll(".number");
 
 numbers.forEach((number) => {
     number.addEventListener("click", () => {
-        let input = number.outerText;
-        calcPara.textContent += input;
-
-        getNumbersFromInput();
+        if (!(operator === null)) {
+            let input = number.outerText;
+            calcPara.textContent += input;
+    
+            getNumbersFromInput();
+        };
     });
 });
 
