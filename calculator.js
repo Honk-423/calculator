@@ -89,7 +89,7 @@ clearBtn.addEventListener("click", () => {
 
     numOne = null;
     numTwo = null;
-    operator = null;
+    operator = undefined;
 
     amountOperateWasCalled = 0;
 });
