@@ -120,7 +120,7 @@ function getNumbersFromInput() {
 
     let addFourEveryLoop = 0;
 
-    for (let i = 0; i <= amountOperateWasCalled; i++) {
+    for (let i = 1; i <= amountOperateWasCalled; i++) {
         addFourEveryLoop += 4;
     };
 
