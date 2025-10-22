@@ -62,6 +62,8 @@ function operate(a, b, op) {
         };
 
         operator = null;
+
+        hasOperateBeenCalled = true;
     };
 };
 
