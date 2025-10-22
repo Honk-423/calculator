@@ -42,8 +42,6 @@ const divide = (a, b) => {
     };
 };
 
-let amountOperateWasCalled = 0;
-
 function operate(a, b, op) {
     if (a && b && op) {
         switch (op) {
@@ -60,8 +58,6 @@ function operate(a, b, op) {
                 calcPara.textContent += ` = ${add(a, b)}`;
                 break;
         };
-    
-        amountOperateWasCalled++;
 
         operator = null;
     };
@@ -91,7 +87,7 @@ clearBtn.addEventListener("click", () => {
     numTwo = null;
     operator = undefined;
 
-    amountOperateWasCalled = 0;
+
 });
 
 const operators = document.querySelectorAll(".operator");
