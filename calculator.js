@@ -114,16 +114,19 @@ equalBtn.addEventListener("click", () => {
 function getNumbersFromInput() {
     let paraArr = calcPara.textContent.split(" ");
 
-    numOne = Number(paraArr[0]);
-
-    numTwo = Number(paraArr[2]);
-
-    let addFourEveryLoop = 0;
-
-    for (let i = 1; i <= amountOperateWasCalled; i++) {
-        addFourEveryLoop += 4;
+    if (amountOperateWasCalled === 0) {
+        numOne = Number(paraArr[0]);
+    
+        numTwo = Number(paraArr[2]);
+    } else {
+        let addFourEveryLoop = 0;
+    
+        for (let i = 1; i <= amountOperateWasCalled; i++) {
+            addFourEveryLoop += 4;
+        };
+    
+        numOne = Number(paraArr[0 + addFourEveryLoop]);
+        numTwo = Number(paraArr[2 + addFourEveryLoop]);
     };
 
-    numOne = Number(paraArr[0 + addFourEveryLoop]);
-    numTwo = Number(paraArr[2 + addFourEveryLoop]);
 };
