@@ -111,6 +111,8 @@ operators.forEach((op) => {
             calcPara.replaceChildren();
 
             calcPara.textContent += `${numOne} ${operator} ${numTwo}`
+
+            operate(numOne, numTwo, operator);
         } else if (numOne && operator == undefined) {
             calcPara.textContent += ` ${input} `;
     
