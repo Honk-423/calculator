@@ -100,6 +100,10 @@ operators.forEach((op) => {
     op.addEventListener("click", () => {
         getNumbersFromInput();
 
+        if (hasOperateBeenCalled) {
+            calcPara.replaceChildren();
+        };
+
         if (numOne && operator == undefined) {
             let input = op.outerText;
             calcPara.textContent += ` ${input} `;
