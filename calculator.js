@@ -130,9 +130,13 @@ equalBtn.addEventListener("click", () => {
 
 function getNumbersFromInput() {
     let paraArr = calcPara.textContent.split(" ");
-        numOne = Number(paraArr[0]);
+        if (paraArr[0]) {
+            numOne = Number(paraArr[0]);
+        };
     
-        numTwo = Number(paraArr[2]); 
+        if (paraArr[2]) {
+            numTwo = Number(paraArr[2]); 
+        };
 
         let result = Number(paraArr[4]);
 
