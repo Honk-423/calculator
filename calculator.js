@@ -117,6 +117,8 @@ operators.forEach((op) => {
             operator = input;
         } else if (numOne && numTwo && operator) {
             operate(numOne, numTwo, operator);
+
+            operator = input;
         };
     });
 });
