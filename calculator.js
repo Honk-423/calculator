@@ -107,11 +107,6 @@ operators.forEach((op) => {
             operator = input;
         } else if (numTwo) {
             operate(numOne, numTwo, operator);
-            
-            let input = op.outerText;
-            calcPara.textContent += ` ${input} `; 
-            
-            operator = input;
         };
     });
 });
