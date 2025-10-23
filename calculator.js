@@ -84,14 +84,6 @@ numbers.forEach((number) => {
         } else {
             additionalNumbers.push(input);
         };
-
-        if (additionalNumbers.length === 1) {
-            numTwo = Number(additionalNumbers[0]);
-        } else if (additionalNumbers.length > 1) {
-            let convertedAdditionalNums = Number(additionalNumbers.join(""));
-
-            numTwo = convertedAdditionalNums;
-        };
     });
 });
 
@@ -146,5 +138,13 @@ function getNumbersFromInput() {
 
         if (result) {
             numOne = result;
+        };
+
+        if (additionalNumbers.length === 1) {
+            numTwo = Number(additionalNumbers[0]);
+        } else if (additionalNumbers.length > 1) {
+            let convertedAdditionalNums = Number(additionalNumbers.join(""));
+
+            numTwo = convertedAdditionalNums;
         };
 };
