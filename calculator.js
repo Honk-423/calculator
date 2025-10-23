@@ -73,7 +73,8 @@ const numbers = document.querySelectorAll(".number");
 
 numbers.forEach((number) => {
     let input = number.outerText;
-    
+    let additionalNumbers = [];
+
     number.addEventListener("click", () => {
         if (!(operator === null)) {
             calcPara.textContent += input;
