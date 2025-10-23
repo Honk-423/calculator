@@ -81,7 +81,7 @@ numbers.forEach((number) => {
     
             getNumbersFromInput();
         } else {
-
+            additionalNumbers.push(input);
         };
     });
 });
