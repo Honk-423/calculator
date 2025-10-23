@@ -110,9 +110,12 @@ operators.forEach((op) => {
         if (hasOperateBeenCalled) {
             calcPara.replaceChildren();
 
-            calcPara.textContent += `${numOne} ${operator} ${numTwo}`
+            if (numOne && numTwo && operator) {
+                calcPara.textContent += `${numOne} ${operator} ${numTwo}`
+    
+                operate(numOne, numTwo, operator);
+            };
 
-            operate(numOne, numTwo, operator);
 
             additionalNumbers = [];
         } else if (numOne && operator == undefined) {
