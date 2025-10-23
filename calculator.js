@@ -78,6 +78,8 @@ numbers.forEach((number) => {
             calcPara.textContent += input;
     
             getNumbersFromInput();
+        } else {
+            
         };
     });
 });
