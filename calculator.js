@@ -89,6 +89,8 @@ numbers.forEach((number) => {
             numTwo = Number(additionalNumbers[0]);
         } else if (additionalNumbers.length > 1) {
             let convertedAdditionalNums = Number(additionalNumbers.join(""));
+
+            numTwo = convertedAdditionalNums;
         };
     });
 });
