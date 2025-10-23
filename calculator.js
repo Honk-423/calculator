@@ -72,14 +72,15 @@ const calcPara = document.querySelector("#calcPara");
 const numbers = document.querySelectorAll(".number");
 
 numbers.forEach((number) => {
+    let input = number.outerText;
+    
     number.addEventListener("click", () => {
         if (!(operator === null)) {
-            let input = number.outerText;
             calcPara.textContent += input;
     
             getNumbersFromInput();
         } else {
-            
+
         };
     });
 });
