@@ -129,4 +129,5 @@ function getNumbersFromInput() {
     
         numTwo = Number(paraArr[2]); 
 
+        let result = Number(paraArr[4]);
 };
