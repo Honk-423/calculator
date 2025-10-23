@@ -102,9 +102,7 @@ operators.forEach((op) => {
 
         if (hasOperateBeenCalled) {
             calcPara.replaceChildren();
-        };
-
-        if (numOne && operator == undefined) {
+        } else if (numOne && operator == undefined) {
             let input = op.outerText;
             calcPara.textContent += ` ${input} `;
     
