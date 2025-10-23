@@ -71,9 +71,10 @@ const calcPara = document.querySelector("#calcPara");
 
 const numbers = document.querySelectorAll(".number");
 
+let additionalNumbers = [];
+
 numbers.forEach((number) => {
     let input = number.outerText;
-    let additionalNumbers = [];
 
     number.addEventListener("click", () => {
         if (!(operator === null)) {
