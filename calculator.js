@@ -77,7 +77,7 @@ numbers.forEach((number) => {
     let input = number.outerText;
 
     number.addEventListener("click", () => {
-        if (!(operator === null)) {
+        if (!(hasOperateBeenCalled)) {
             calcPara.textContent += input;
     
             getNumbersFromInput();
