@@ -84,6 +84,10 @@ numbers.forEach((number) => {
         } else {
             additionalNumbers.push(input);
         };
+
+        if (additionalNumbers.length === 1) {
+            numTwo = Number(additionalNumbers[0]);
+        };
     });
 });
 
