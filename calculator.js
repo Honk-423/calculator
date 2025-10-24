@@ -67,7 +67,7 @@ function operate(a, b, op) {
     };
 };
 
-function checkForDividingByZero() {
+function checkForDividingByZero(operator, secondNumber) {
 
 };
 
