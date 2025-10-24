@@ -67,6 +67,10 @@ function operate(a, b, op) {
     };
 };
 
+function checkForDividingByZero() {
+
+};
+
 const calcPara = document.querySelector("#calcPara");
 
 const numbers = document.querySelectorAll(".number");
