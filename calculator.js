@@ -140,7 +140,7 @@ const equalBtn = document.querySelector("#equal");
 equalBtn.addEventListener("click", () => {
      if (hasOperateBeenCalled) {
         getNumbersFromInput();
-        
+
         calcPara.replaceChildren();
 
             if (numOne && numTwo && operator) {
@@ -154,6 +154,8 @@ equalBtn.addEventListener("click", () => {
 
                 hasOperateBeenCalled = false;
             };
+
+        additionalNumbers = [];
     } else if (numOne && numTwo && operator && !(hasOperateBeenCalled)) {
         operate(numOne, numTwo, operator);
         
