@@ -98,7 +98,8 @@ clearBtn.addEventListener("click", () => {
 const operators = document.querySelectorAll(".operator");
 
 const checkForNumsAndOperator = (firstNum, operator, secondNum) => {
-    return firstNum && operator && secondNum || secondNum === 0 ? true: false;
+    return firstNum || firstNum === 0 && operator 
+    && secondNum || secondNum === 0 ? true: false;
 };
 
 operators.forEach((op) => {
