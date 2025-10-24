@@ -94,7 +94,7 @@ clearBtn.addEventListener("click", () => {
 
     numOne = null;
     numTwo = null;
-    operator = undefined;
+    operator = null;
 
 
 });
