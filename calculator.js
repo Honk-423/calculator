@@ -118,6 +118,8 @@ operators.forEach((op) => {
                 numOne = null;
                 numTwo = null;
                 operator = null;
+
+                hasOperateBeenCalled = false;
             };
             
             additionalNumbers = [];
