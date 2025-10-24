@@ -97,6 +97,10 @@ clearBtn.addEventListener("click", () => {
 
 const operators = document.querySelectorAll(".operator");
 
+const checkForNumsAndOperator = () => {
+
+};
+
 operators.forEach((op) => {
     op.addEventListener("click", () => {
         let input = op.outerText;
@@ -121,10 +125,6 @@ operators.forEach((op) => {
             };
             
             additionalNumbers = [];
-        } else if (numOne && operator == undefined) {
-            calcPara.textContent += ` ${input} `;
-    
-            operator = input;
         } else if (numOne && numTwo && operator) {
             operate(numOne, numTwo, operator);
 
