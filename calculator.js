@@ -72,7 +72,7 @@ function checkForDividingByZero(operator, secondNumber) {
 };
 
 const noDividingByZero = () => {
-
+    alert("Nice try. Please input another number.");
 };
 
 const calcPara = document.querySelector("#calcPara");
