@@ -2,7 +2,7 @@ let numOne;
 let numTwo;
 let operator;
 
-const returnAsIntOrToFixed = () => {
+const returnAsIntOrToFixed = (result) => {
 
 };
 
