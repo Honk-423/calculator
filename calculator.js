@@ -139,7 +139,19 @@ const equalBtn = document.querySelector("#equal");
 
 equalBtn.addEventListener("click", () => {
      if (hasOperateBeenCalled) {
+        calcPara.replaceChildren();
 
+            if (numOne && numTwo && operator) {
+                calcPara.textContent += `${numOne} ${operator} ${numTwo}`
+    
+                operate(numOne, numTwo, operator);
+            } else {
+                numOne = null;
+                numTwo = null;
+                operator = null;
+
+                hasOperateBeenCalled = false;
+            };
     } else if (numOne && numTwo && operator && !(hasOperateBeenCalled)) {
         operate(numOne, numTwo, operator);
         
