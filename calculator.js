@@ -104,7 +104,7 @@ clearBtn.addEventListener("click", () => {
     numTwo = null;
     operator = null;
 
-
+    hasOperateBeenCalled = false;
 });
 
 const operators = document.querySelectorAll(".operator");
