@@ -33,7 +33,7 @@ const divide = (a, b) => {
 let hasOperateBeenCalled = false;
 
 function operate(a, b, op) {
-    if (a && b && op) {
+    if (a || a === 0 && b || b === 0 && op) {
         switch (op) {
             case "÷": 
                 calcPara.textContent += ` = ${divide(a, b)}`;
