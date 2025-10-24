@@ -139,6 +139,8 @@ const equalBtn = document.querySelector("#equal");
 
 equalBtn.addEventListener("click", () => {
      if (hasOperateBeenCalled) {
+        getNumbersFromInput();
+        
         calcPara.replaceChildren();
 
             if (numOne && numTwo && operator) {
