@@ -71,6 +71,10 @@ function checkForDividingByZero(operator, secondNumber) {
     operator === "÷" && secondNumber === 0 ? true : false;
 };
 
+const noDividingByZero = () => {
+
+};
+
 const calcPara = document.querySelector("#calcPara");
 
 const numbers = document.querySelectorAll(".number");
