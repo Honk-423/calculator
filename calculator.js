@@ -9,25 +9,25 @@ const resultAsIntOrToFixed = (result) => {
 const add = (a, b) => {
     let sum = a + b;
 
-    return returnAsIntOrToFixed(sum);
+    return resultAsIntOrToFixed(sum);
 };
 
 const subtract = (a, b) => {
     let difference = a - b;
 
-    return returnAsIntOrToFixed(difference);
+    return resultAsIntOrToFixed(difference);
 };
 
 const multiply = (a, b) => {
     let product = a * b;
 
-    return returnAsIntOrToFixed(product);
+    return resultAsIntOrToFixed(product);
 };
 
 const divide = (a, b) => {
     let quotient = a / b;
     
-    return returnAsIntOrToFixed(quotient);
+    return resultAsIntOrToFixed(quotient);
 };
 
 let hasOperateBeenCalled = false;
