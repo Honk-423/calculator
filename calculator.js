@@ -138,9 +138,11 @@ operators.forEach((op) => {
 const equalBtn = document.querySelector("#equal");
 
 equalBtn.addEventListener("click", () => {
-    operate(numOne, numTwo, operator);
-    
-    getNumbersFromInput();
+    if (numOne && numTwo && operator) {
+        operate(numOne, numTwo, operator);
+        
+        getNumbersFromInput();
+    };
 });
 
 function getNumbersFromInput() {
