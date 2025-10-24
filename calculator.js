@@ -2,6 +2,10 @@ let numOne;
 let numTwo;
 let operator;
 
+const returnAsIntOrToFixed = () => {
+
+};
+
 const add = (a, b) => {
     let sum = a + b;
 
