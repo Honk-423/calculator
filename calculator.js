@@ -114,9 +114,12 @@ operators.forEach((op) => {
                 calcPara.textContent += `${numOne} ${operator} ${numTwo}`
     
                 operate(numOne, numTwo, operator);
+            } else {
+                numOne = null;
+                numTwo = null;
+                operator = null;
             };
-
-
+            
             additionalNumbers = [];
         } else if (numOne && operator == undefined) {
             calcPara.textContent += ` ${input} `;
