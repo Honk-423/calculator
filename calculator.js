@@ -70,9 +70,9 @@ const numbers = document.querySelectorAll(".number");
 let additionalNumbers = [];
 
 numbers.forEach((number) => {
-    let input = number.outerText;
-
     number.addEventListener("click", () => {
+        let input = number.outerText;
+        
         if (!(hasOperateBeenCalled)) {
             calcPara.textContent += input;
     
