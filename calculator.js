@@ -55,7 +55,7 @@ function operate(a, b, op) {
     };
 };
 
-const checkForDividingByZero = (operator, secondNumber) => {
+const checkForDividingByZero = (firstNumber, operator, secondNumber) => {
     return operator === "÷" && secondNumber === 0 ? true : false;
 };
 
