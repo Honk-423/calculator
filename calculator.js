@@ -116,14 +116,6 @@ operators.forEach((op) => {
         if (hasOperateBeenCalled) {
             calcPara.replaceChildren();
 
-            if (numOne && numTwo && operator) {
-                // ERASE
-                calcPara.textContent += `${numOne} ${operator} ${numTwo}`;
-    
-                operate(numOne, numTwo, operator);
-            } else if (checkForDividingByZero(numOne, operator, numTwo)) {
-                // ERASE
-                noDividingByZero();
             if (checkForNumsAndOperator(numOne, operator, numTwo)) {
                 if (checkForDividingByZero(numOne, operator, numTwo)) {
                     noDividingByZero();
@@ -138,7 +130,6 @@ operators.forEach((op) => {
         
                     operate(numOne, numTwo, operator);
                 };
-            };
             } else {
                 numOne = null;
                 numTwo = null;
@@ -167,7 +158,7 @@ operators.forEach((op) => {
                 operator = input;
             };
         };
-        
+
     });
 });
 
