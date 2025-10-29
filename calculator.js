@@ -131,9 +131,14 @@ operators.forEach((op) => {
     
             operator = input;
         } else if (checkForNumsAndOperator(numOne, operator, numTwo)) {
-            operate(numOne, numTwo, operator);
+            if (checkForDividingByZero(operator, numTwo)) {
+                noDividingByZero();
+            } else {
+                operate(numOne, numTwo, operator);
+    
+                operator = input;
+            };
 
-            operator = input;
         } else if (checkForDividingByZero(operator, numTwo)) {
             noDividingByZero();
         };
