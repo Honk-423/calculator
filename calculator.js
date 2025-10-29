@@ -158,7 +158,7 @@ operators.forEach((op) => {
         if (checkForNumsAndOperator(numOne, operator, numTwo)
             && !(hasOperateBeenCalled)) {
             // Run lines in statement if not operateHasBeenCalled
-            if (checkForDividingByZero(operator, numTwo)) {
+            if (checkForDividingByZero(numOne, operator, numTwo)) {
                 noDividingByZero();
             } else {
                 // ERASE
