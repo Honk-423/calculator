@@ -111,15 +111,18 @@ operators.forEach((op) => {
         let input = op.outerText;
         
         getNumbersFromInput();
-        
+
+        // Run if operateHasBeenCalled
         if (hasOperateBeenCalled) {
             calcPara.replaceChildren();
 
             if (numOne && numTwo && operator) {
+                // ERASE
                 calcPara.textContent += `${numOne} ${operator} ${numTwo}`;
     
                 operate(numOne, numTwo, operator);
             } else if (checkForDividingByZero(numOne, operator, numTwo)) {
+                // ERASE
                 noDividingByZero();
             if (checkForNumsAndOperator(numOne, operator, numTwo)) {
                 if (checkForDividingByZero(numOne, operator, numTwo)) {
@@ -146,19 +149,24 @@ operators.forEach((op) => {
             
             additionalNumbers = [];
         } else if (numOne != undefined && operator == undefined) {
+            // MAKE if statement
             calcPara.textContent += ` ${input} `;
     
             operator = input;
         } else if (numOne && numTwo && operator) {
+            // ERASE
             operate(numOne, numTwo, operator);
 
             operator = input;
         } else if (checkForDividingByZero(numOne, operator, numTwo)) {
+            // ERASE
             noDividingByZero();
         } else if (checkForNumsAndOperator(numOne, operator, numTwo)) {
+            // Run lines in statement if not operateHasBeenCalled
             if (checkForDividingByZero(operator, numTwo)) {
                 noDividingByZero();
             } else {
+                // ERASE
                 operate(numOne, numTwo, operator);
     
                 operator = input;
