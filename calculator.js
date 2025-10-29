@@ -91,6 +91,8 @@ const decimalBtn = document.querySelector("#decimal");
 
 decimalBtn.addEventListener("click", () => {
     let input = decimalBtn.outerText;
+
+    calcPara.textContent += input;
 });
 
 const clearBtn = document.querySelector("#clear");
