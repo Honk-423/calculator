@@ -60,7 +60,11 @@ const checkForDividingByZero = (firstNumber, operator, secondNumber) => {
 };
 
 const noDividingByZero = () => {
-    alert("Nice try. Please input another number.");
+    if (!hasOperateBeenCalled) {
+        alert("Nice try. Please input another number.");
+    } else {
+        alert("I appreciate your determination, but no.")
+    };
 };
 
 const calcPara = document.querySelector("#calcPara");
