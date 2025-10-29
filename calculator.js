@@ -114,6 +114,12 @@ operators.forEach((op) => {
             if (checkForNumsAndOperator(numOne, operator, numTwo)) {
                 if (checkForDividingByZero(operator, numTwo)) {
                     noDividingByZero();
+
+                    numOne = null;
+                    numTwo = null;
+                    operator = null;
+
+                    hasOperateBeenCalled = false;
                 } else {
                     calcPara.textContent += `${numOne} ${operator} ${numTwo}`
         
