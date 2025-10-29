@@ -112,7 +112,7 @@ operators.forEach((op) => {
             calcPara.replaceChildren();
 
             if (numOne && numTwo && operator) {
-                calcPara.textContent += `${numOne} ${operator} ${numTwo}`
+                calcPara.textContent += `${numOne} ${operator} ${numTwo}`;
     
                 operate(numOne, numTwo, operator);
             } else if (checkForDividingByZero(numOne, operator, numTwo)) {
