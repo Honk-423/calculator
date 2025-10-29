@@ -33,7 +33,7 @@ const divide = (a, b) => {
 let hasOperateBeenCalled = false;
 
 function operate(a, b, op) {
-    if (a && b && op) {
+    if (a || a === 0 && b || b === 0 && op) {
         switch (op) {
             case "÷": 
                 calcPara.textContent += ` = ${divide(a, b)}`;
@@ -98,7 +98,8 @@ clearBtn.addEventListener("click", () => {
 const operators = document.querySelectorAll(".operator");
 
 const checkForNumsAndOperator = (firstNum, operator, secondNum) => {
-    return firstNum && operator && secondNum || secondNum === 0 ? true: false;
+    return (firstNum || firstNum === 0) && operator 
+    && (secondNum || secondNum === 0) ? true: false;
 };
 
 operators.forEach((op) => {
@@ -116,6 +117,21 @@ operators.forEach((op) => {
                 operate(numOne, numTwo, operator);
             } else if (checkForDividingByZero(numOne, operator, numTwo)) {
                 noDividingByZero();
+            if (checkForNumsAndOperator(numOne, operator, numTwo)) {
+                if (checkForDividingByZero(operator, numTwo)) {
+                    noDividingByZero();
+
+                    numOne = null;
+                    numTwo = null;
+                    operator = null;
+
+                    hasOperateBeenCalled = false;
+                } else {
+                    calcPara.textContent += `${numOne} ${operator} ${numTwo}`
+        
+                    operate(numOne, numTwo, operator);
+                };
+            };
             } else {
                 numOne = null;
                 numTwo = null;
@@ -125,7 +141,7 @@ operators.forEach((op) => {
             };
             
             additionalNumbers = [];
-        } else if (numOne && operator == undefined) {
+        } else if (numOne != undefined && operator == undefined) {
             calcPara.textContent += ` ${input} `;
     
             operator = input;
@@ -135,6 +151,14 @@ operators.forEach((op) => {
             operator = input;
         } else if (checkForDividingByZero(numOne, operator, numTwo)) {
             noDividingByZero();
+        } else if (checkForNumsAndOperator(numOne, operator, numTwo)) {
+            if (checkForDividingByZero(operator, numTwo)) {
+                noDividingByZero();
+            } else {
+                operate(numOne, numTwo, operator);
+    
+                operator = input;
+            };
         };
     });
 });
@@ -162,7 +186,8 @@ equalBtn.addEventListener("click", () => {
         additionalNumbers = [];
     } else if (checkForDividingByZero(numOne, operator, numTwo)) {
         noDividingByZero();
-    } else if (numOne && numTwo && operator && !(hasOperateBeenCalled)) {
+    } else if (checkForNumsAndOperator(numOne, operator, numTwo) 
+        && !(hasOperateBeenCalled)) {
         operate(numOne, numTwo, operator);
         
         getNumbersFromInput();
@@ -181,7 +206,7 @@ function getNumbersFromInput() {
 
         let result = Number(paraArr[4]);
 
-        if (result) {
+        if (result || result === 0) {
             numOne = result;
         };
 
