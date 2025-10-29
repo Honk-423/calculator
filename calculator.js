@@ -111,7 +111,7 @@ operators.forEach((op) => {
         if (hasOperateBeenCalled) {
             calcPara.replaceChildren();
 
-            if (numOne && numTwo && operator) {
+            if (checkForNumsAndOperator(numOne, operator, numTwo)) {
                 calcPara.textContent += `${numOne} ${operator} ${numTwo}`
     
                 operate(numOne, numTwo, operator);
@@ -183,7 +183,7 @@ function getNumbersFromInput() {
 
         let result = Number(paraArr[4]);
 
-        if (result) {
+        if (result || result === 0) {
             numOne = result;
         };
 
