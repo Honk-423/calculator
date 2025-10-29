@@ -122,7 +122,7 @@ operators.forEach((op) => {
             } else if (checkForDividingByZero(numOne, operator, numTwo)) {
                 noDividingByZero();
             if (checkForNumsAndOperator(numOne, operator, numTwo)) {
-                if (checkForDividingByZero(operator, numTwo)) {
+                if (checkForDividingByZero(numOne, operator, numTwo)) {
                     noDividingByZero();
 
                     numOne = null;
