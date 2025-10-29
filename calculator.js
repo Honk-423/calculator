@@ -138,9 +138,6 @@ operators.forEach((op) => {
     
                 operator = input;
             };
-
-        } else if (checkForDividingByZero(operator, numTwo)) {
-            noDividingByZero();
         };
     });
 });
