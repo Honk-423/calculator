@@ -153,14 +153,6 @@ operators.forEach((op) => {
             calcPara.textContent += ` ${input} `;
     
             operator = input;
-        } else if (numOne && numTwo && operator) {
-            // ERASE
-            operate(numOne, numTwo, operator);
-
-            operator = input;
-        } else if (checkForDividingByZero(numOne, operator, numTwo)) {
-            // ERASE
-            noDividingByZero();
         } else if (checkForNumsAndOperator(numOne, operator, numTwo)) {
             // Run lines in statement if not operateHasBeenCalled
             if (checkForDividingByZero(operator, numTwo)) {
