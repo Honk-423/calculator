@@ -89,6 +89,10 @@ numbers.forEach((number) => {
 
 const decimalBtn = document.querySelector("#decimal");
 
+decimalBtn.addEventListener("click", () => {
+    
+});
+
 const clearBtn = document.querySelector("#clear");
 
 clearBtn.addEventListener("click", () => {
