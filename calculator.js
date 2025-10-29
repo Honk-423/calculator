@@ -87,6 +87,8 @@ numbers.forEach((number) => {
     });
 });
 
+const decimalBtn = document.querySelector("#decimal");
+
 const clearBtn = document.querySelector("#clear");
 
 clearBtn.addEventListener("click", () => {
