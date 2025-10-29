@@ -114,7 +114,7 @@ operators.forEach((op) => {
                 calcPara.textContent += `${numOne} ${operator} ${numTwo}`
     
                 operate(numOne, numTwo, operator);
-            } else if (checkForDividingByZero(operator, numTwo)) {
+            } else if (checkForDividingByZero(numOne, operator, numTwo)) {
                 noDividingByZero();
             } else {
                 numOne = null;
@@ -133,7 +133,7 @@ operators.forEach((op) => {
             operate(numOne, numTwo, operator);
 
             operator = input;
-        } else if (checkForDividingByZero(operator, numTwo)) {
+        } else if (checkForDividingByZero(numOne, operator, numTwo)) {
             noDividingByZero();
         };
     });
@@ -160,7 +160,7 @@ equalBtn.addEventListener("click", () => {
             };
 
         additionalNumbers = [];
-    } else if (checkForDividingByZero(operator, numTwo)) {
+    } else if (checkForDividingByZero(numOne, operator, numTwo)) {
         noDividingByZero();
     } else if (numOne && numTwo && operator && !(hasOperateBeenCalled)) {
         operate(numOne, numTwo, operator);
