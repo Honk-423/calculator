@@ -112,7 +112,6 @@ operators.forEach((op) => {
         
         getNumbersFromInput();
 
-        // Run if operateHasBeenCalled
         if (hasOperateBeenCalled) {
             calcPara.replaceChildren();
 
@@ -140,7 +139,6 @@ operators.forEach((op) => {
             
             additionalNumbers = [];
         } else if (numOne != undefined && operator == undefined) {
-            // MAKE if statement
             calcPara.textContent += ` ${input} `;
     
             operator = input;
@@ -148,11 +146,9 @@ operators.forEach((op) => {
         
         if (checkForNumsAndOperator(numOne, operator, numTwo)
             && !(hasOperateBeenCalled)) {
-            // Run lines in statement if not operateHasBeenCalled
             if (checkForDividingByZero(numOne, operator, numTwo)) {
                 noDividingByZero();
             } else {
-                // ERASE
                 operate(numOne, numTwo, operator);
     
                 operator = input;
