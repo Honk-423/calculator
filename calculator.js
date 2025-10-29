@@ -119,8 +119,6 @@ operators.forEach((op) => {
         
                     operate(numOne, numTwo, operator);
                 };
-            } else if (checkForDividingByZero(operator, numTwo)) {
-                noDividingByZero();
             } else {
                 numOne = null;
                 numTwo = null;
