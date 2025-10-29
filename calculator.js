@@ -126,7 +126,7 @@ operators.forEach((op) => {
             };
             
             additionalNumbers = [];
-        } else if (numOne && operator == undefined) {
+        } else if (numOne !== undefined && operator == undefined) {
             calcPara.textContent += ` ${input} `;
     
             operator = input;
