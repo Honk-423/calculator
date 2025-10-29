@@ -130,7 +130,7 @@ operators.forEach((op) => {
             calcPara.textContent += ` ${input} `;
     
             operator = input;
-        } else if (numOne && numTwo && operator) {
+        } else if (checkForNumsAndOperator(numOne, operator, numTwo)) {
             operate(numOne, numTwo, operator);
 
             operator = input;
@@ -163,7 +163,8 @@ equalBtn.addEventListener("click", () => {
         additionalNumbers = [];
     } else if (checkForDividingByZero(operator, numTwo)) {
         noDividingByZero();
-    } else if (numOne && numTwo && operator && !(hasOperateBeenCalled)) {
+    } else if (checkForNumsAndOperator(numOne, operator, numTwo) 
+        && !(hasOperateBeenCalled)) {
         operate(numOne, numTwo, operator);
         
         getNumbersFromInput();
