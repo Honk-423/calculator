@@ -155,7 +155,8 @@ operators.forEach((op) => {
             operator = input;
         };
         
-        if (checkForNumsAndOperator(numOne, operator, numTwo)) {
+        if (checkForNumsAndOperator(numOne, operator, numTwo)
+            && !(hasOperateBeenCalled)) {
             // Run lines in statement if not operateHasBeenCalled
             if (checkForDividingByZero(operator, numTwo)) {
                 noDividingByZero();
