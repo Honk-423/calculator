@@ -233,3 +233,7 @@ function getNumbersFromInput() {
             numTwo = convertedAdditionalNums;
         };
 };
+
+document.addEventListener("keydown", (e) => {
+
+});
