@@ -89,6 +89,9 @@ numbers.forEach((number) => {
 
 const decimalBtn = document.querySelector("#decimal");
 
+let doesNumOneContainDecimal = false;
+let doesNumTwoContainDecimal = false;
+
 decimalBtn.addEventListener("click", () => {
     let input = decimalBtn.outerText;
 
