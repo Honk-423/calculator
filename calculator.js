@@ -235,7 +235,7 @@ function getNumbersFromInput() {
 };
 
 document.addEventListener("keydown", (e) => {
-
+    const validNums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 });
 
 /*  
