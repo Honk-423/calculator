@@ -248,6 +248,10 @@ document.addEventListener("keydown", (e) => {
     };
 
     const validOps = ["÷", "×", "-", "+"];
+
+    if (validOps.indexOf(e.key) > -1) {
+        
+    };
 });
 
 /*  
