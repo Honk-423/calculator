@@ -30,6 +30,10 @@ const divide = (a, b) => {
     return resultAsIntOrToFixed(quotient);
 };
 
+const resetAllInfo = () => {
+
+};
+
 let hasOperateBeenCalled = false;
 
 function operate(a, b, op) {
