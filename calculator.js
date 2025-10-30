@@ -118,7 +118,7 @@ decimalBtn.addEventListener("click", () => {
         doesNumTwoContainDecimal = true;
     };
 
-    if (hasOperateBeenCalled) {
+    if (hasOperateBeenCalled && additionalNumbers.indexOf(".") < 0) {
         additionalNumbers.push(input);
     };
 });
