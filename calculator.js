@@ -95,10 +95,10 @@ let doesNumTwoContainDecimal = false;
 decimalBtn.addEventListener("click", () => {
     let input = decimalBtn.outerText;
 
-    if (!(numOne) && !(operator) && !(calcPara.textContent.includes("."))) {
+    if (!(operator) && doesNumOneContainDecimal === false) {
         calcPara.textContent += input;
-    } else if (numOne && !(operator) && !(calcPara.textContent.includes("."))) {
-        calcPara.textContent += input;
+        
+        doesNumOneContainDecimal = true;
     };
 });
 
