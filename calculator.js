@@ -100,6 +100,12 @@ decimalBtn.addEventListener("click", () => {
         
         doesNumOneContainDecimal = true;
     };
+
+    if (operator && doesNumTwoContainDecimal === false) {
+        calcPara.textContent += input;
+        
+        doesNumTwoContainDecimal = true;
+    };
 });
 
 const clearBtn = document.querySelector("#clear");
