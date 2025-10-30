@@ -237,3 +237,18 @@ function getNumbersFromInput() {
 document.addEventListener("keydown", (e) => {
 
 });
+
+/*  
+*   INITIALIZE arr validNums
+*       IF e.key is a valid number
+*       PASTE code from numbers
+*   INITIALIZE arr validOps
+*       IF e.key is validOps 
+*           IF e.key equals "/" convert operator to division symbol
+*           IF e.key equals "*" convert operator to multiplication symbol
+*       PASTE code from operators
+*   IF period is clicked
+*       PASTE code from decimal
+*   IF equal is clicked
+*       PASTE code from equal
+*/
