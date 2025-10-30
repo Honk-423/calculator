@@ -117,6 +117,10 @@ decimalBtn.addEventListener("click", () => {
         
         doesNumTwoContainDecimal = true;
     };
+
+    if (hasOperateBeenCalled) {
+        additionalNumbers.push(input);
+    };
 });
 
 const clearBtn = document.querySelector("#clear");
