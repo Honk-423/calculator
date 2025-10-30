@@ -35,6 +35,9 @@ const resetAllInfo = () => {
     numTwo = null;
     operator = null;
     
+    doesNumOneContainDecimal = false;
+    doesNumTwoContainDecimal = false;
+
     hasOperateBeenCalled = false;
 };
 
