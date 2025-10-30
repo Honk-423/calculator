@@ -30,6 +30,14 @@ const divide = (a, b) => {
     return resultAsIntOrToFixed(quotient);
 };
 
+const resetAllInfo = () => {
+    numOne = null;
+    numTwo = null;
+    operator = null;
+    
+    hasOperateBeenCalled = false;
+};
+
 let hasOperateBeenCalled = false;
 
 function operate(a, b, op) {
@@ -113,11 +121,7 @@ const clearBtn = document.querySelector("#clear");
 clearBtn.addEventListener("click", () => {
     calcPara.replaceChildren();
 
-    numOne = null;
-    numTwo = null;
-    operator = null;
-
-    hasOperateBeenCalled = false;
+    resetAllInfo();
 });
 
 const operators = document.querySelectorAll(".operator");
@@ -140,22 +144,14 @@ operators.forEach((op) => {
                 if (checkForDividingByZero(numOne, operator, numTwo)) {
                     noDividingByZero();
 
-                    numOne = null;
-                    numTwo = null;
-                    operator = null;
-
-                    hasOperateBeenCalled = false;
+                    resetAllInfo();
                 } else {
                     calcPara.textContent += `${numOne} ${operator} ${numTwo}`
         
                     operate(numOne, numTwo, operator);
                 };
             } else {
-                numOne = null;
-                numTwo = null;
-                operator = null;
-
-                hasOperateBeenCalled = false;
+                resetAllInfo();
             };
             
             additionalNumbers = [];
@@ -192,11 +188,7 @@ equalBtn.addEventListener("click", () => {
     
                 operate(numOne, numTwo, operator);
             } else {
-                numOne = null;
-                numTwo = null;
-                operator = null;
-
-                hasOperateBeenCalled = false;
+               resetAllInfo();
             };
 
         additionalNumbers = [];
