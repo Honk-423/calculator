@@ -31,7 +31,11 @@ const divide = (a, b) => {
 };
 
 const resetAllInfo = () => {
-
+    numOne = null;
+    numTwo = null;
+    operator = null;
+    
+    hasOperateBeenCalled = false;
 };
 
 let hasOperateBeenCalled = false;
