@@ -94,6 +94,8 @@ decimalBtn.addEventListener("click", () => {
 
     if (!(numOne) && !(operator) && !(calcPara.textContent.includes("."))) {
         calcPara.textContent += input;
+    } else if (numOne && !(operator) && !(calcPara.textContent.includes("."))) {
+        calcPara.textContent += input;
     };
 });
 
