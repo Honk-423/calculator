@@ -246,6 +246,8 @@ document.addEventListener("keydown", (e) => {
             additionalNumbers.push(e.key);
         };
     };
+
+    const validOps = ["÷", "×", "-", "+"];
 });
 
 /*  
