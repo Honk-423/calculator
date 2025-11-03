@@ -258,6 +258,10 @@ document.addEventListener("keydown", (e) => {
         };
     };
 
+    if (e.key === "Delete") {
+
+    };
+
     const validOps = ["/", "*", "-", "+"];
 
     if (validOps.indexOf(e.key) > -1) {
