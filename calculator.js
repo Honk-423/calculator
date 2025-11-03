@@ -187,6 +187,10 @@ operators.forEach((op) => {
 
 const equalBtn = document.querySelector("#equal");
 
+function equalBtnFunctionality() {
+
+};
+
 equalBtn.addEventListener("click", () => {
      if (hasOperateBeenCalled) {
         getNumbersFromInput();
