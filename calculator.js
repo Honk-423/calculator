@@ -85,7 +85,13 @@ const numbers = document.querySelectorAll(".number");
 let additionalNumbers = [];
 
 function numbersFunctionality(input) {
-
+    if (!(hasOperateBeenCalled)) {
+            calcPara.textContent += input;
+    
+            getNumbersFromInput();
+        } else {
+            additionalNumbers.push(input);
+        };
 };
 
 numbers.forEach((number) => {
