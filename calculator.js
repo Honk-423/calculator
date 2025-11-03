@@ -132,9 +132,7 @@ function clearBtnFunctionality() {
 };
 
 clearBtn.addEventListener("click", () => {
-    calcPara.replaceChildren();
 
-    resetAllInfo();
 });
 
 const operators = document.querySelectorAll(".operator");
