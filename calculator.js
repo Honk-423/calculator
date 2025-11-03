@@ -270,6 +270,10 @@ document.addEventListener("keydown", (e) => {
             operatorsFunctionality(opInput);
         };
     };
+
+    if (e.key === "=") {
+        
+    };
 });
 
 /*  
