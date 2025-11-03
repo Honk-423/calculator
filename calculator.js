@@ -213,28 +213,7 @@ function equalBtnFunctionality() {
 };
 
 equalBtn.addEventListener("click", () => {
-     if (hasOperateBeenCalled) {
-        getNumbersFromInput();
-
-        calcPara.replaceChildren();
-
-            if (numOne && numTwo && operator) {
-                calcPara.textContent += `${numOne} ${operator} ${numTwo}`
-    
-                operate(numOne, numTwo, operator);
-            } else {
-               resetAllInfo();
-            };
-
-        additionalNumbers = [];
-    } else if (checkForDividingByZero(numOne, operator, numTwo)) {
-        noDividingByZero();
-    } else if (checkForNumsAndOperator(numOne, operator, numTwo) 
-        && !(hasOperateBeenCalled)) {
-        operate(numOne, numTwo, operator);
-        
-        getNumbersFromInput();
-    };
+     
 });
 
 function getNumbersFromInput() {
