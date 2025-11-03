@@ -257,10 +257,13 @@ document.addEventListener("keydown", (e) => {
 
         if (e.key === "/") {
             opInput = "÷";
+            operatorsFunctionality(opInput);
         } else if (e.key === "*") {
             opInput = "×";
+            operatorsFunctionality(opInput);
         } else if (e.key !== "/" || e.key === "*") {
             opInput = e.key;
+            operatorsFunctionality(opInput);
         };
     };
 });
