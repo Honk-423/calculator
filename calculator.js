@@ -98,13 +98,6 @@ numbers.forEach((number) => {
     number.addEventListener("click", () => {
         let input = number.outerText;
         
-        if (!(hasOperateBeenCalled)) {
-            calcPara.textContent += input;
-    
-            getNumbersFromInput();
-        } else {
-            additionalNumbers.push(input);
-        };
     });
 });
 
