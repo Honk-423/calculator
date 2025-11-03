@@ -132,7 +132,7 @@ function clearBtnFunctionality() {
 };
 
 clearBtn.addEventListener("click", () => {
-
+    clearBtnFunctionality();
 });
 
 const operators = document.querySelectorAll(".operator");
