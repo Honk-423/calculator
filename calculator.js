@@ -104,7 +104,21 @@ let doesNumOneContainDecimal = false;
 let doesNumTwoContainDecimal = false;
 
 function decimalFunctionality(input) {
+    if (!(operator) && doesNumOneContainDecimal === false) {
+        calcPara.textContent += input;
+        
+        doesNumOneContainDecimal = true;
+    };
 
+    if (operator && doesNumTwoContainDecimal === false) {
+        calcPara.textContent += input;
+        
+        doesNumTwoContainDecimal = true;
+    };
+
+    if (hasOperateBeenCalled && additionalNumbers.indexOf(".") < 0) {
+        additionalNumbers.push(input);
+    };
 };
 
 decimalBtn.addEventListener("click", () => {
