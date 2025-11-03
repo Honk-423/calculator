@@ -146,7 +146,7 @@ clearBtn.addEventListener("click", () => {
 const backBtn = document.querySelector("#back");
 
 backBtn.addEventListener("click", () => {
-
+    calcPara.textContent = calcPara.textContent.slice(0, -1);
 });
 
 /* 
