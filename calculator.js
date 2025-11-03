@@ -146,6 +146,10 @@ clearBtn.addEventListener("click", () => {
 const backBtn = document.querySelector("#back");
 
 backBtn.addEventListener("click", () => {
+    if (checkForNumsAndOperator(numOne, operator, numTwo)) {
+        
+    };
+
     if (calcPara.textContent.at(-1) === " " 
         && (calcPara.textContent.at(-2) === "÷" || "×" || "-" || "+")  
         && calcPara.textContent.at(-3) === " ") {
