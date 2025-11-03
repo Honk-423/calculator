@@ -279,7 +279,7 @@ document.addEventListener("keydown", (e) => {
         };
     };
 
-    if (e.key === "=") {
+    if (e.key === "=" || e.key === "Enter") {
         equalBtnFunctionality();
     };
 });
