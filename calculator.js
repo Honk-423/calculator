@@ -124,7 +124,7 @@ function decimalFunctionality(input) {
 decimalBtn.addEventListener("click", () => {
     let input = decimalBtn.outerText;
 
-    
+    decimalFunctionality(input);
 });
 
 const clearBtn = document.querySelector("#clear");
