@@ -213,7 +213,7 @@ function equalBtnFunctionality() {
 };
 
 equalBtn.addEventListener("click", () => {
-     
+    equalBtnFunctionality();
 });
 
 function getNumbersFromInput() {
