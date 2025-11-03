@@ -103,7 +103,7 @@ const decimalBtn = document.querySelector("#decimal");
 let doesNumOneContainDecimal = false;
 let doesNumTwoContainDecimal = false;
 
-function decimalFunctionality() {
+function decimalFunctionality(input) {
 
 };
 
