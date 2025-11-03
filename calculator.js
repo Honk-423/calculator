@@ -147,7 +147,7 @@ const backBtn = document.querySelector("#back");
 
 backBtn.addEventListener("click", () => {
     if (checkForNumsAndOperator(numOne, operator, numTwo)) {
-        
+        calcPara.replaceChildren();
     };
 
     if (calcPara.textContent.at(-1) === " " 
