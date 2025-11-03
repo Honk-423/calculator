@@ -261,6 +261,8 @@ function getNumbersFromInput() {
     
         if (paraArr[2]) {
             numTwo = Number(paraArr[2]); 
+        } else {
+            numTwo = undefined;
         };
 
         let result = Number(paraArr[4]);
