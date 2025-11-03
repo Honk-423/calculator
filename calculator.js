@@ -251,6 +251,10 @@ document.addEventListener("keydown", (e) => {
 
     if (validOps.indexOf(e.key) > -1) {
         let opInput;
+
+        if (e.key === "/") {
+            opInput = "÷";
+        };
     };
 });
 
