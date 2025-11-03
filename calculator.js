@@ -263,7 +263,7 @@ document.addEventListener("keydown", (e) => {
     };
 
     if (e.key === ".") {
-
+        decimalFunctionality(e.key);
     };
 
     if (e.key === "Delete") {
