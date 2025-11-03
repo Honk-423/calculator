@@ -146,6 +146,8 @@ clearBtn.addEventListener("click", () => {
 const backBtn = document.querySelector("#back");
 
 backBtn.addEventListener("click", () => {
+    getNumbersFromInput();
+    
     if (checkForNumsAndOperator(numOne, operator, numTwo)) {
         calcPara.replaceChildren();
     };
@@ -159,8 +161,6 @@ backBtn.addEventListener("click", () => {
     };
 
     calcPara.textContent = calcPara.textContent.slice(0, -1);
-
-    getNumbersFromInput();
 });
 
 /* 
