@@ -143,6 +143,8 @@ clearBtn.addEventListener("click", () => {
     clearBtnFunctionality();
 });
 
+const backBtn = document.querySelector("#back");
+
 /* 
 *   INITIALIZE var backBtn
 *   ADD click event listener to backBtn
