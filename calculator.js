@@ -84,7 +84,7 @@ const numbers = document.querySelectorAll(".number");
 
 let additionalNumbers = [];
 
-function numbersFunctionality() {
+function numbersFunctionality(input) {
 
 };
 
