@@ -150,6 +150,8 @@ backBtn.addEventListener("click", () => {
         && (calcPara.textContent.at(-2) === "÷" || "×" || "-" || "+")  
         && calcPara.textContent.at(-3) === " ") {
         calcPara.textContent = calcPara.textContent.slice(0, -2);
+        
+        operator = undefined;
     };
 
     calcPara.textContent = calcPara.textContent.slice(0, -1);
