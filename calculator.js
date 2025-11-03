@@ -256,6 +256,8 @@ document.addEventListener("keydown", (e) => {
             opInput = "÷";
         } else if (e.key === "*") {
             opInput = "×";
+        } else if (e.key !== "/" || e.key === "*") {
+            opInput = e.key;
         };
     };
 });
