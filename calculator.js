@@ -103,6 +103,10 @@ const decimalBtn = document.querySelector("#decimal");
 let doesNumOneContainDecimal = false;
 let doesNumTwoContainDecimal = false;
 
+function decimalFunctionality() {
+
+};
+
 decimalBtn.addEventListener("click", () => {
     let input = decimalBtn.outerText;
 
