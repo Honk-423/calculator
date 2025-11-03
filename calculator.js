@@ -98,6 +98,7 @@ numbers.forEach((number) => {
     number.addEventListener("click", () => {
         let input = number.outerText;
         
+        numbersFunctionality(input);
     });
 });
 
