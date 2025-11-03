@@ -255,6 +255,8 @@ function getNumbersFromInput() {
     let paraArr = calcPara.textContent.split(" ");
         if (paraArr[0]) {
             numOne = Number(paraArr[0]);
+        } else {
+            numOne = undefined;
         };
     
         if (paraArr[2]) {
