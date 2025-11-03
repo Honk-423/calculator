@@ -149,7 +149,7 @@ backBtn.addEventListener("click", () => {
     if (calcPara.textContent.at(-1) === " " 
         && (calcPara.textContent.at(-2) === "÷" || "×" || "-" || "+")  
         && calcPara.textContent.at(-3) === " ") {
-
+        calcPara.textContent = calcPara.textContent.slice(0, -2);
     };
 
     calcPara.textContent = calcPara.textContent.slice(0, -1);
