@@ -138,6 +138,10 @@ const checkForNumsAndOperator = (firstNum, operator, secondNum) => {
     && (secondNum || secondNum === 0) ? true: false;
 };
 
+function operatorsFunctionality(input) {
+
+};
+
 operators.forEach((op) => {
     op.addEventListener("click", () => {
         let input = op.outerText;
