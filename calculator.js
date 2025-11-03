@@ -124,21 +124,7 @@ function decimalFunctionality(input) {
 decimalBtn.addEventListener("click", () => {
     let input = decimalBtn.outerText;
 
-    if (!(operator) && doesNumOneContainDecimal === false) {
-        calcPara.textContent += input;
-        
-        doesNumOneContainDecimal = true;
-    };
-
-    if (operator && doesNumTwoContainDecimal === false) {
-        calcPara.textContent += input;
-        
-        doesNumTwoContainDecimal = true;
-    };
-
-    if (hasOperateBeenCalled && additionalNumbers.indexOf(".") < 0) {
-        additionalNumbers.push(input);
-    };
+    
 });
 
 const clearBtn = document.querySelector("#clear");
