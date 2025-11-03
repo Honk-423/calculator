@@ -147,8 +147,8 @@ const backBtn = document.querySelector("#back");
 
 backBtn.addEventListener("click", () => {
     getNumbersFromInput();
-    
-    if (checkForNumsAndOperator(numOne, operator, numTwo)) {
+
+    if (checkForNumsAndOperator(numOne, operator, numTwo) && hasOperateBeenCalled) {
         calcPara.replaceChildren();
     };
 
