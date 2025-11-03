@@ -84,6 +84,10 @@ const numbers = document.querySelectorAll(".number");
 
 let additionalNumbers = [];
 
+function numbersFunctionality() {
+
+};
+
 numbers.forEach((number) => {
     number.addEventListener("click", () => {
         let input = number.outerText;
