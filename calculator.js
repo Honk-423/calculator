@@ -254,6 +254,8 @@ document.addEventListener("keydown", (e) => {
 
         if (e.key === "/") {
             opInput = "÷";
+        } else if (e.key === "*") {
+            opInput = "×";
         };
     };
 });
