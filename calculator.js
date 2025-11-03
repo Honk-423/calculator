@@ -181,7 +181,7 @@ operators.forEach((op) => {
     op.addEventListener("click", () => {
         let input = op.outerText;
         
-
+        operatorsFunctionality(input);
     });
 });
 
