@@ -139,14 +139,7 @@ const checkForNumsAndOperator = (firstNum, operator, secondNum) => {
 };
 
 function operatorsFunctionality(input) {
-
-};
-
-operators.forEach((op) => {
-    op.addEventListener("click", () => {
-        let input = op.outerText;
-        
-        getNumbersFromInput();
+    getNumbersFromInput();
 
         if (hasOperateBeenCalled) {
             calcPara.replaceChildren();
@@ -182,6 +175,12 @@ operators.forEach((op) => {
                 operator = input;
             };
         };
+};
+
+operators.forEach((op) => {
+    op.addEventListener("click", () => {
+        let input = op.outerText;
+        
 
     });
 });
