@@ -126,7 +126,9 @@ decimalBtn.addEventListener("click", () => {
 const clearBtn = document.querySelector("#clear");
 
 function clearBtnFunctionality() {
+    calcPara.replaceChildren();
 
+    resetAllInfo();
 };
 
 clearBtn.addEventListener("click", () => {
