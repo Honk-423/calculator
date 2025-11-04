@@ -301,7 +301,8 @@ function getNumbersFromInput() {
 document.addEventListener("keydown", (e) => {
     const validNums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-    if (validNums.toString().indexOf(e.key) > -1) {
+    if (validNums.toString().indexOf(e.key) > -1 
+    && !(e.key === ",")) {
         numbersFunctionality(e.key);
     };
 
