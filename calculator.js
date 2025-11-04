@@ -180,37 +180,7 @@ function backBtnFunctionality() {
 };
 
 backBtn.addEventListener("click", () => {
-    getNumbersFromInput();
-
-    if (numOne && numTwo && hasOperateBeenCalled) {
-        calcPara.replaceChildren();
-
-        resetAllInfo();
-    };
-
-    if (calcPara.textContent.at(-1) === " " 
-        && (calcPara.textContent.at(-2) === "÷" || "×" || "-" || "+")  
-        && calcPara.textContent.at(-3) === " ") {
-            calcPara.textContent = calcPara.textContent.slice(0, -3);
-        
-            operator = undefined;
-    } else if (numOne 
-    && !(operator) 
-    && !(numTwo) 
-    && calcPara.textContent.at(-1) === ".") {
-        calcPara.textContent = calcPara.textContent.slice(0, -1);
-
-        doesNumOneContainDecimal = false;
-    } else if (numTwo
-        && calcPara.textContent.at(-1) === ".") {
-        calcPara.textContent = calcPara.textContent.slice(0, -1);
-
-        doesNumTwoContainDecimal = false;
-    } else {
-        calcPara.textContent = calcPara.textContent.slice(0, -1);
-        
-        getNumbersFromInput();
-    };
+    
 });
 
 /* 
