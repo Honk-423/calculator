@@ -145,6 +145,10 @@ clearBtn.addEventListener("click", () => {
 
 const backBtn = document.querySelector("#back");
 
+function backBtnFunctionality() {
+
+};
+
 backBtn.addEventListener("click", () => {
     getNumbersFromInput();
 
