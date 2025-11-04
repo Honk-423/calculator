@@ -162,6 +162,8 @@ backBtn.addEventListener("click", () => {
             operator = undefined;
     } else {
         calcPara.textContent = calcPara.textContent.slice(0, -1);
+        
+        getNumbersFromInput();
     };
 });
 
