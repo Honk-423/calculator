@@ -328,6 +328,10 @@ document.addEventListener("keydown", (e) => {
         clearBtnFunctionality();
     };
 
+    if (e.key === "Backspace") {
+        backBtnFunctionality();
+    };
+
     const validOps = ["/", "*", "-", "+"];
 
     if (validOps.indexOf(e.key) > -1) {
