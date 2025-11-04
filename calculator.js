@@ -281,31 +281,32 @@ equalBtn.addEventListener("click", () => {
 
 function getNumbersFromInput() {
     let paraArr = calcPara.textContent.split(" ");
-        if (paraArr[0]) {
-            numOne = Number(paraArr[0]);
-        } else {
-            numOne = undefined;
-        };
     
-        if (paraArr[2]) {
-            numTwo = Number(paraArr[2]); 
-        } else {
-            numTwo = undefined;
-        };
+    if (paraArr[0]) {
+        numOne = Number(paraArr[0]);
+    } else {
+        numOne = undefined;
+    };
+    
+    if (paraArr[2]) {
+        numTwo = Number(paraArr[2]); 
+    } else {
+        numTwo = undefined;
+    };
 
-        let result = Number(paraArr[4]);
+    let result = Number(paraArr[4]);
 
-        if (result || result === 0) {
-            numOne = result;
-        };
+    if (result || result === 0) {
+        numOne = result;
+    };
 
-        if (additionalNumbers.length === 1) {
-            numTwo = Number(additionalNumbers[0]);
-        } else if (additionalNumbers.length > 1) {
-            let convertedAdditionalNums = Number(additionalNumbers.join(""));
+    if (additionalNumbers.length === 1) {
+        numTwo = Number(additionalNumbers[0]);
+    } else if (additionalNumbers.length > 1) {
+        let convertedAdditionalNums = Number(additionalNumbers.join(""));
 
-            numTwo = convertedAdditionalNums;
-        };
+        numTwo = convertedAdditionalNums;
+    };
 };
 
 document.addEventListener("keydown", (e) => {
