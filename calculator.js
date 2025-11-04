@@ -183,21 +183,6 @@ backBtn.addEventListener("click", () => {
     backBtnFunctionality();
 });
 
-/* 
-*   INITIALIZE var backBtn
-*   ADD click event listener to backBtn
-*       TRIM last character of calcPara
-*   INITIALIZE function backBtnFunctionality
-*   PASTE code from backBtn event listener into backBtnFunctionality
-*   REMOVE code from backBtn event listener
-*   CALL backBtnFunctionality from backBtn event listener
-*/
-
-/* 
-*   IF e.key equals "Backspace"
-*   CALL backBtnFunctionality
-*/
-
 const operators = document.querySelectorAll(".operator");
 
 const checkForNumsAndOperator = (firstNum, operator, secondNum) => {
