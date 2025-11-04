@@ -170,7 +170,7 @@ backBtn.addEventListener("click", () => {
     } else if (numTwo
         && calcPara.textContent.at(-1) === "."
     ) {
-
+        calcPara.textContent = calcPara.textContent.slice(0, -1);
     } else {
         calcPara.textContent = calcPara.textContent.slice(0, -1);
         
