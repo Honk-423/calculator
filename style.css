@@ -16,6 +16,7 @@ body {
     width: 100%;
     display: flex;
     flex-flow: column;
+    background-color: hsl(200, 4.87%, 4.4%);
 }
 
 #calcPara {
