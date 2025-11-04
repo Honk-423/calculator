@@ -18,6 +18,8 @@ body {
 
 #calcPara {
     height: 32px;
+    display: flex;
+    align-items: center;
 }
 
 #buttons {
