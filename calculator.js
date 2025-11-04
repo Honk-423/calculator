@@ -180,7 +180,7 @@ function backBtnFunctionality() {
 };
 
 backBtn.addEventListener("click", () => {
-    
+    backBtnFunctionality();
 });
 
 /* 
