@@ -150,6 +150,8 @@ backBtn.addEventListener("click", () => {
 
     if (numOne && numTwo && hasOperateBeenCalled) {
         calcPara.replaceChildren();
+
+        resetAllInfo();
     };
 
     if (calcPara.textContent.at(-1) === " " 
