@@ -23,6 +23,7 @@ body {
     height: 32px;
     display: flex;
     align-items: center;
+    color: #39b839;
 }
 
 #buttons {
