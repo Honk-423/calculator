@@ -167,6 +167,8 @@ backBtn.addEventListener("click", () => {
         calcPara.textContent = calcPara.textContent.slice(0, -1);
 
         doesNumOneContainDecimal = false;
+    } else if (numTwo) {
+
     } else {
         calcPara.textContent = calcPara.textContent.slice(0, -1);
         
