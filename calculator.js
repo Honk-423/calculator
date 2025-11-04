@@ -160,8 +160,11 @@ backBtn.addEventListener("click", () => {
             calcPara.textContent = calcPara.textContent.slice(0, -2);
         
             operator = undefined;
-    } else if (numOne && calcPara.textContent.at(-1) === ".") {
- 
+    } else if (numOne 
+    && !(operator) 
+    && !(numTwo) 
+    && calcPara.textContent.at(-1) === ".") {
+    
     } else {
         calcPara.textContent = calcPara.textContent.slice(0, -1);
         
