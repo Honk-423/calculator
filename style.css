@@ -54,6 +54,11 @@ div#buttons > div {
 
 .row {
     display: flex;
+    flex: 1;
+}
+
+.number {
+    flex: 1;
 }
 
 #operators {
