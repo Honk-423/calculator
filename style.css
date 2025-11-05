@@ -38,6 +38,7 @@ div#inner-container > div {
     flex-flow: wrap;
     justify-content: space-around;
     align-items: center;
+    font-family: "Kode Mono", monospace;
     font-size: 40px;
     color: #39b839;
     overflow: auto;
