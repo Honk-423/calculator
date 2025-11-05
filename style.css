@@ -69,3 +69,19 @@ div#buttons > div {
     display: flex;
     flex-flow: column;
 }
+
+#clear {
+    flex: 1;
+}
+
+#back {
+    flex: 1;
+}
+
+.operator {
+    flex: 1;
+}
+
+#equal {
+    flex: 1;
+}
