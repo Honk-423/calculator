@@ -47,6 +47,7 @@ div#inner-container > div {
 }
 
 div#buttons > div {
+    display: flex;
     width: 100%;
 }
 
