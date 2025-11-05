@@ -64,6 +64,7 @@ div#buttons > div {
 
 #decimal {
     flex: 1;
+    border-radius: 56px;
 }
 
 #operators {
