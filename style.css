@@ -78,19 +78,23 @@ div#buttons > div {
 #clear {
     flex: 1;
     border-radius: 26px;
+    font-size: 58px;
 }
 
 #back {
     flex: 1;
     border-radius: 26px;
+    font-size: 58px;
 }
 
 .operator {
     flex: 1;
     border-radius: 26px;
+    font-size: 58px;
 }
 
 #equal {
     flex: 1;
     border-radius: 26px;
+    font-size: 58px;
 }
