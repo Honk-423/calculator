@@ -48,6 +48,7 @@ div#inner-container > div {
 
 div#buttons > div {
     display: flex;
+    flex-flow: column;
     width: 100%;
 }
 
