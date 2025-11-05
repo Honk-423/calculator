@@ -27,6 +27,10 @@ body {
     align-items: center;
 }
 
+div#inner-container > div {
+    width: 100%;
+}
+
 #calcPara {
     height: 32px;
     display: flex;
