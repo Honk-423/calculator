@@ -30,6 +30,7 @@ body {
 #calcPara {
     height: 32px;
     display: flex;
+    justify-content: center;
     align-items: center;
     color: #39b839;
 }
