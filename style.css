@@ -41,6 +41,7 @@ div#inner-container > div {
     font-size: 40px;
     color: #39b839;
     overflow: auto;
+    scrollbar-width: none;
     margin: 10px 0px;
 }
 
