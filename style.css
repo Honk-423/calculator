@@ -61,6 +61,7 @@ div#buttons > div {
 .number {
     flex: 1;
     border-radius: 56px;
+    font-size: 40px;
 }
 
 #decimal {
