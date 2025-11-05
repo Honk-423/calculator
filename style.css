@@ -41,6 +41,7 @@ div#inner-container > div {
 }
 
 #buttons {
+    height: 100%;
     display: flex;
     justify-content: center;
 }
