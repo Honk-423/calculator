@@ -41,6 +41,7 @@ div#inner-container > div {
     align-items: center;
     font-family: "Kode Mono", monospace;
     font-size: 40px;
+    text-shadow: -3px 0px 2px rgb(255, 255, 255);
     color: #39b839;
     overflow: auto;
     scrollbar-width: none;
