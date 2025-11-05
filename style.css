@@ -61,6 +61,10 @@ div#buttons > div {
     flex: 1;
 }
 
+#decimal {
+    flex: 1;
+}
+
 #operators {
     display: flex;
     flex-flow: column;
