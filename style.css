@@ -35,7 +35,7 @@ div#inner-container > div {
 #calcPara {
     height: 92px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     font-size: 40px;
     color: #39b839;
