@@ -46,6 +46,10 @@ div#inner-container > div {
     justify-content: center;
 }
 
+div#buttons > div {
+    width: 100%;
+}
+
 #operators {
     display: flex;
     flex-flow: column;
