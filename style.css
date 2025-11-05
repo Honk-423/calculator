@@ -39,7 +39,7 @@ div#inner-container > div {
     align-items: center;
     font-size: 40px;
     color: #39b839;
-    overflow: hidden;
+    overflow: auto;
     margin: 10px 0px;
 }
 
