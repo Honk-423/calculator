@@ -41,6 +41,7 @@ div#inner-container > div {
 
 #buttons {
     display: flex;
+    justify-content: center;
 }
 
 #operators {
