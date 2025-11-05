@@ -40,6 +40,7 @@ div#inner-container > div {
     font-size: 40px;
     color: #39b839;
     overflow: hidden;
+    margin: 10px 0px;
 }
 
 #buttons {
