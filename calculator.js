@@ -89,7 +89,9 @@ const calcPara = document.querySelector("#calcPara");
 const buttons = document.querySelectorAll("button");
 
 buttons.forEach(button => {
-  
+    button.addEventListener("mousedown", (e) => {
+
+    });
 });
 
 const numbers = document.querySelectorAll(".number");
