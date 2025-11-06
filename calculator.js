@@ -3,7 +3,11 @@ let numTwo;
 let operator;
 
 const resultAsIntOrToFixed = (result) => {
-    return result % 1 !== 0 ? result.toFixed(1): result;
+    if (result % 1 !== 0) {
+        return result.toFixed(1)
+    } else {
+        return result;
+    };
 };
 
 const add = (a, b) => {
