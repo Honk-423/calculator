@@ -259,7 +259,7 @@ function equalBtnFunctionality() {
 
         calcPara.replaceChildren();
 
-            if (numOne && numTwo && operator) {
+            if (checkForNumsAndOperator(numOne, operator, numTwo) ) {
                 calcPara.textContent += `${numOne} ${operator} ${numTwo}`
     
                 operate(numOne, numTwo, operator);
