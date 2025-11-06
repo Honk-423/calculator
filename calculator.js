@@ -90,7 +90,7 @@ const buttons = document.querySelectorAll("button");
 
 buttons.forEach(button => {
     button.addEventListener("mousedown", (e) => {
-
+        e.preventDefault();
     });
 });
 
