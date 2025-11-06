@@ -86,6 +86,8 @@ const noDividingByZero = () => {
 
 const calcPara = document.querySelector("#calcPara");
 
+const buttons = document.querySelectorAll("button");
+
 const numbers = document.querySelectorAll(".number");
 
 let additionalNumbers = [];
