@@ -5,6 +5,8 @@ let operator;
 const resultAsIntOrToFixed = (result) => {
     if (result % 1 !== 0) {
         return result.toFixed(1)
+    } else if (result > Number.MAX_SAFE_INTEGER) {
+        return result.toExponential();
     } else {
         return result;
     };
