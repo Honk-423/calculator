@@ -323,6 +323,10 @@ function getNumbersFromInput() {
     };
 };
 
+const changeBtnColor = (btn, colorVar) => {
+    btn.style.backgroundColor = `${colorVar}`;
+};
+
 document.addEventListener("keydown", (e) => {
     const validNums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -364,10 +368,6 @@ document.addEventListener("keydown", (e) => {
         equalBtnFunctionality();
     };
 });
-
-const changeBtnColor = (btn, colorVar) => {
-    btn.style.backgroundColor = `${colorVar}`;
-};
 
 /* 
 *   ADD id divisionBtn to division btn
