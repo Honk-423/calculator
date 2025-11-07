@@ -388,6 +388,10 @@ document.addEventListener("keydown", (e) => {
     };
 });
 
+document.addEventListener("keyup", (e) => {
+
+});
+
 /* 
 *   ADD id divisionBtn to division btn
 *   ADD id multBtn to multiplication btn
