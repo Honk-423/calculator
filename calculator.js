@@ -333,7 +333,7 @@ buttons.forEach(button => {
     });
 
     button.addEventListener("mouseout", () => {
-
+        changeBtnColor(button, defaultColor);
     });
 });
 
