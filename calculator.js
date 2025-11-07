@@ -375,6 +375,8 @@ document.addEventListener("keydown", (e) => {
             changeBtnColor(button, clickColor);
         } else if (e.key === "Delete" && button.outerText === "CLEAR") {
             changeBtnColor(clearBtn, clickColor);
+        } else if (e.key === "Backspace") {
+            changeBtnColor(backBtn, clickColor);
         };
     };
 });
