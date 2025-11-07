@@ -367,6 +367,10 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "=" || e.key === "Enter") {
         equalBtnFunctionality();
     };
+
+    for (let button of buttons) {
+
+    };
 });
 
 /* 
