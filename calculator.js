@@ -365,8 +365,8 @@ document.addEventListener("keydown", (e) => {
     };
 });
 
-const changeBtnColor = (btn, color) => {
-    btn.style.backgroundColor = `${color}`;
+const changeBtnColor = (btn, colorVar) => {
+    btn.style.backgroundColor = `${colorVar}`;
 };
 
 /* 
