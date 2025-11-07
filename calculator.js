@@ -373,6 +373,8 @@ document.addEventListener("keydown", (e) => {
     for (let button of buttons) {
         if (e.key === button.outerText) {
             changeBtnColor(button, clickColor);
+        } else if (e.key === "Delete" && button.outerText === "CLEAR") {
+            changeBtnColor(clearBtn, clickColor);
         };
     };
 });
