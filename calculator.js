@@ -323,6 +323,8 @@ function getNumbersFromInput() {
     };
 };
 
+const defaultColor = "#efefef";
+
 const changeBtnColor = (btn, colorVar) => {
     btn.style.backgroundColor = `${colorVar}`;
 };
@@ -391,8 +393,6 @@ document.addEventListener("keydown", (e) => {
 });
 
 document.addEventListener("keyup", (e) => {
-    const defaultColor = "#efefef";
-
     for (let button of buttons) {
         if (e.key === button.outerText) {
             changeBtnColor(button, defaultColor);
