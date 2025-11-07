@@ -382,6 +382,8 @@ document.addEventListener("keydown", (e) => {
             changeBtnColor(backBtn, clickColor);
         } else if (e.key === "/") {
             changeBtnColor(divisionBtn, clickColor);
+        } else if (e.key === "*") {
+            changeBtnColor(multBtn, clickColor);
         };
     };
 });
