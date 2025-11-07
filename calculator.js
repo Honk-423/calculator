@@ -370,6 +370,9 @@ document.addEventListener("keydown", (e) => {
 
     const clickColor = "#c4d9dd";
 
+    const divisionBtn = document.querySelector("#division");
+    const multBtn = document.querySelector("#mult")
+
     for (let button of buttons) {
         if (e.key === button.outerText) {
             changeBtnColor(button, clickColor);
