@@ -368,6 +368,8 @@ document.addEventListener("keydown", (e) => {
         equalBtnFunctionality();
     };
 
+    const clickColor = "#c4d9dd";
+    
     for (let button of buttons) {
 
     };
