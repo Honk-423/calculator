@@ -393,15 +393,15 @@ document.addEventListener("keyup", (e) => {
 
     for (let button of buttons) {
         if (e.key === button.outerText) {
-            changeBtnColor(button, clickColor);
+            changeBtnColor(button, defaultColor);
         } else if (e.key === "Delete" && button.outerText === "CLEAR") {
-            changeBtnColor(clearBtn, clickColor);
+            changeBtnColor(clearBtn, defaultColor);
         } else if (e.key === "Backspace") {
-            changeBtnColor(backBtn, clickColor);
+            changeBtnColor(backBtn, defaultColor);
         } else if (e.key === "/") {
-            changeBtnColor(divisionBtn, clickColor);
+            changeBtnColor(divisionBtn, defaultColor);
         } else if (e.key === "*") {
-            changeBtnColor(multBtn, clickColor);
+            changeBtnColor(multBtn, defaultColor);
         };
     };
 });
