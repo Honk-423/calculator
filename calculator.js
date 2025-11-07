@@ -369,9 +369,11 @@ document.addEventListener("keydown", (e) => {
     };
 
     const clickColor = "#c4d9dd";
-    
-    for (let button of buttons) {
 
+    for (let button of buttons) {
+        if (e.key === button.outerText) {
+            changeBtnColor(button, clickColor);
+        };
     };
 });
 
