@@ -329,7 +329,7 @@ buttons.forEach(button => {
     const hoverColor = "#dae4e7";
 
     button.addEventListener("mouseenter", () => {
-
+        changeBtnColor(button, hoverColor);
     });
 
     button.addEventListener("mouseout", () => {
