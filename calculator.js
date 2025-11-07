@@ -268,13 +268,14 @@ function equalBtnFunctionality() {
             };
 
         additionalNumbers = [];
-    } else if (checkForDividingByZero(numOne, operator, numTwo)) {
-        noDividingByZero();
-    } else if (checkForNumsAndOperator(numOne, operator, numTwo) 
-        && !(hasOperateBeenCalled)) {
-        operate(numOne, numTwo, operator);
-        
-        getNumbersFromInput();
+    } else if (checkForNumsAndOperator(numOne, operator, numTwo)) {
+        if (checkForDividingByZero(numOne, operator, numTwo)) {
+            noDividingByZero();
+        } else if (!(hasOperateBeenCalled)) {
+            operate(numOne, numTwo, operator);
+
+            getNumbersFromInput();
+        };
     };
 };
 
