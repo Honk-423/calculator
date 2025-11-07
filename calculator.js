@@ -365,6 +365,9 @@ document.addEventListener("keydown", (e) => {
     };
 });
 
+const changeBtnColor = () => {
+
+};
 
 /* 
 *   ADD id divisionBtn to division btn
