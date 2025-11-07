@@ -327,6 +327,9 @@ const changeBtnColor = (btn, colorVar) => {
     btn.style.backgroundColor = `${colorVar}`;
 };
 
+const divisionBtn = document.querySelector("#division");
+const multBtn = document.querySelector("#mult")
+
 document.addEventListener("keydown", (e) => {
     const validNums = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -369,9 +372,6 @@ document.addEventListener("keydown", (e) => {
     };
 
     const clickColor = "#c4d9dd";
-
-    const divisionBtn = document.querySelector("#division");
-    const multBtn = document.querySelector("#mult")
 
     for (let button of buttons) {
         if (e.key === button.outerText) {
