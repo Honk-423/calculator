@@ -215,6 +215,8 @@ function operatorsFunctionality(input) {
                     noDividingByZero();
 
                     resetAllInfo();
+                } else if (additionalNumbers.length === 0) {
+                    resetAllInfo();
                 } else {
                     calcPara.textContent += `${numOne} ${operator} ${numTwo}`
         
