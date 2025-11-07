@@ -325,6 +325,16 @@ function getNumbersFromInput() {
 
 const defaultColor = "#efefef";
 
+buttons.forEach(button => {
+    button.addEventListener("mouseenter", () => {
+
+    });
+
+    button.addEventListener("mouseout", () => {
+
+    });
+});
+
 const changeBtnColor = (btn, colorVar) => {
     btn.style.backgroundColor = `${colorVar}`;
 };
