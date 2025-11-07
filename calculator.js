@@ -380,6 +380,8 @@ document.addEventListener("keydown", (e) => {
             changeBtnColor(clearBtn, clickColor);
         } else if (e.key === "Backspace") {
             changeBtnColor(backBtn, clickColor);
+        } else if (e.key === "/") {
+            changeBtnColor(divisionBtn, clickColor);
         };
     };
 });
