@@ -389,6 +389,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 document.addEventListener("keyup", (e) => {
+    const defaultColor = "#efefef";
 
 });
 
