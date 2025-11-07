@@ -409,27 +409,3 @@ document.addEventListener("keyup", (e) => {
         };
     };
 });
-
-/* 
-*   ADD id divisionBtn to division btn
-*   ADD id multBtn to multiplication btn
-*   INITIALIZE arrow function changeBtnColor with parameter btn and color
-*       SET btn.style.backgroundColor to color
-*   INITIALIZE arrow function revertBtnColor with parameter btn and color
-*       SET btn.style.backgroundColor to color
-*   INITIALIZE buttons forEach again with the parameter button
-*       ADD keydown event listener with parameter e to button
-*           IF e.key equals button.outerText
-*               CALL changeBtnColor with the arguments button, #c4d9dd
-*           IF e.key equals /
-*               CALL changeBtnColor with the arguments divisionBtn, #c4d9dd
-*           IF IF e.key equals *
-*               CALL changeBtnColor with the arguments multButton, #c4d9dd
-*       ADD keyup event listener with parameter e to button
-*           IF e.key equals button.outerText
-*               CALL revertBtnColor with the arguments button, #efefef
-*           IF e.key equals /
-*               CALL revertBtnColor with the arguments divisionBtn, #efefef
-*           IF IF e.key equals *
-*               CALL revertBtnColor with the arguments multButton, #efefef
-*/
