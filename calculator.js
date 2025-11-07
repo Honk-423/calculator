@@ -391,6 +391,19 @@ document.addEventListener("keydown", (e) => {
 document.addEventListener("keyup", (e) => {
     const defaultColor = "#efefef";
 
+    for (let button of buttons) {
+        if (e.key === button.outerText) {
+            changeBtnColor(button, clickColor);
+        } else if (e.key === "Delete" && button.outerText === "CLEAR") {
+            changeBtnColor(clearBtn, clickColor);
+        } else if (e.key === "Backspace") {
+            changeBtnColor(backBtn, clickColor);
+        } else if (e.key === "/") {
+            changeBtnColor(divisionBtn, clickColor);
+        } else if (e.key === "*") {
+            changeBtnColor(multBtn, clickColor);
+        };
+    };
 });
 
 /* 
