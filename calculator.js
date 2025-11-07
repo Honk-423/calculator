@@ -260,9 +260,13 @@ function equalBtnFunctionality() {
         calcPara.replaceChildren();
 
             if (checkForNumsAndOperator(numOne, operator, numTwo) ) {
-                calcPara.textContent += `${numOne} ${operator} ${numTwo}`
-    
-                operate(numOne, numTwo, operator);
+                if (checkForDividingByZero(numOne, operator, numTwo)) {
+                    noDividingByZero();
+                } else {
+                    calcPara.textContent += `${numOne} ${operator} ${numTwo}`
+        
+                    operate(numOne, numTwo, operator);   
+                };
             } else {
                resetAllInfo();
             };
