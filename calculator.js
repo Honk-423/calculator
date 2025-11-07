@@ -365,7 +365,7 @@ document.addEventListener("keydown", (e) => {
     };
 });
 
-const changeBtnColor = () => {
+const changeBtnColor = (btn, color) => {
 
 };
 
