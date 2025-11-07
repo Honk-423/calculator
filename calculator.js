@@ -380,6 +380,8 @@ document.addEventListener("keydown", (e) => {
             changeBtnColor(clearBtn, clickColor);
         } else if (e.key === "Backspace") {
             changeBtnColor(backBtn, clickColor);
+        } else if (e.key === "Enter") {
+            changeBtnColor(equalBtn, clickColor);
         } else if (e.key === "/") {
             changeBtnColor(divisionBtn, clickColor);
         } else if (e.key === "*") {
@@ -398,6 +400,8 @@ document.addEventListener("keyup", (e) => {
             changeBtnColor(clearBtn, defaultColor);
         } else if (e.key === "Backspace") {
             changeBtnColor(backBtn, defaultColor);
+        } else if (e.key === "Enter") {
+            changeBtnColor(equalBtn, defaultColor);
         } else if (e.key === "/") {
             changeBtnColor(divisionBtn, defaultColor);
         } else if (e.key === "*") {
