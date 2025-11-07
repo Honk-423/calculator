@@ -49,6 +49,10 @@ div#inner-container > div {
     margin: 10px 0px;
 }
 
+button:focus {
+    background-color: #dae4e7;
+}
+
 button:hover {
   background-color: #dae4e7;
 }
