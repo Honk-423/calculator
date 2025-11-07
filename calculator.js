@@ -262,6 +262,8 @@ function equalBtnFunctionality() {
             if (checkForNumsAndOperator(numOne, operator, numTwo) ) {
                 if (checkForDividingByZero(numOne, operator, numTwo)) {
                     noDividingByZero();
+
+                    resetAllInfo();
                 } else {
                     calcPara.textContent += `${numOne} ${operator} ${numTwo}`
         
