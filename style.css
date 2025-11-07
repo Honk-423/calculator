@@ -49,6 +49,10 @@ div#inner-container > div {
     margin: 10px 0px;
 }
 
+button:hover {
+  background-color: #dae4e7;
+}
+
 #buttons {
     height: 100%;
     display: flex;
