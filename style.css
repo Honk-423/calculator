@@ -53,6 +53,10 @@ button:hover {
   background-color: #dae4e7;
 }
 
+button:active {
+    background-color: #c4d9dd;
+}
+
 #buttons {
     height: 100%;
     display: flex;
