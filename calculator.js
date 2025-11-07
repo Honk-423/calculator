@@ -326,6 +326,8 @@ function getNumbersFromInput() {
 const defaultColor = "#efefef";
 
 buttons.forEach(button => {
+    const hoverColor = "#dae4e7";
+
     button.addEventListener("mouseenter", () => {
 
     });
