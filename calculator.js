@@ -227,8 +227,6 @@ function operatorsFunctionality(input) {
             } else {
                 resetAllInfo();
             };
-            
-            additionalNumbers = [];
         } else if (numOne != undefined && operator == undefined) {
             calcPara.textContent += ` ${input} `;
     
@@ -278,8 +276,6 @@ function equalBtnFunctionality() {
             } else {
                resetAllInfo();
             };
-
-        additionalNumbers = [];
     } else if (checkForNumsAndOperator(numOne, operator, numTwo)) {
         if (checkForDividingByZero(numOne, operator, numTwo)) {
             noDividingByZero();
