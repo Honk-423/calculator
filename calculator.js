@@ -344,6 +344,14 @@ buttons.forEach(button => {
     button.addEventListener("blur", () => {
         changeBtnColor(button, defaultColor);
     });
+
+    button.addEventListener("mousedown", () => {
+        changeBtnColor(button, clickColor);
+    });
+
+    button.addEventListener("mouseup", () => {
+        changeBtnColor(button, defaultColor);
+    });
 });
 
 const changeBtnColor = (btn, colorVar) => {
