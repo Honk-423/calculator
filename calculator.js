@@ -324,6 +324,7 @@ function getNumbersFromInput() {
 };
 
 const defaultColor = "#efefef";
+const clickColor = "#c4d9dd";
 
 buttons.forEach(button => {
     const hoverColor = "#dae4e7";
@@ -392,8 +393,6 @@ document.addEventListener("keydown", (e) => {
     if (e.key === "=" || e.key === "Enter") {
         equalBtnFunctionality();
     };
-
-    const clickColor = "#c4d9dd";
 
     for (let button of buttons) {
         if (e.key === button.outerText) {
