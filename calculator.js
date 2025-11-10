@@ -45,6 +45,8 @@ const resetAllInfo = () => {
     doesNumTwoContainDecimal = false;
 
     hasOperateBeenCalled = false;
+
+    additionalNumbers = [];
 };
 
 let hasOperateBeenCalled = false;
